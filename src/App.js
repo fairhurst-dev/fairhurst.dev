@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import { Grid, Paper } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid container direction="column">
+        <Grid xs={12} container item>
+          <AppBar>
+            <Toolbar>
+              {" "}
+              <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
+                caroline-fairhurst
+              </Typography>
+            </Toolbar>
+          </AppBar>
+        </Grid>
+        <Grid container item>
+          <Paper>
+            {" "}
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              Here's some content
+            </Typography>
+          </Paper>
+        </Grid>
+      </Grid>
     </div>
   );
 }
