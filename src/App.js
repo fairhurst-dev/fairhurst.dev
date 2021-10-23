@@ -1,33 +1,31 @@
 import "./App.css";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import { Grid, Paper } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import Home from "./components/pages/Home";
+import Header from "./components/Header";
+import About from "./components/pages/About";
+import Footer from "./components/Footer";
+import Contact from "./components/pages/Contact";
+import theme from "./theme";
+
+import { ThemeProvider } from "@mui/material/styles";
 
 function App() {
+  const [page, setPage] = useState("home");
+
+  function handleSetPage(page) {
+    setPage(page);
+  }
+
   return (
     <div className="App">
-      <Grid container direction="column">
-        <Grid xs={12} container item>
-          <AppBar>
-            <Toolbar>
-              {" "}
-              <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
-                caroline-fairhurst
-              </Typography>
-            </Toolbar>
-          </AppBar>
-        </Grid>
-        <Grid container item>
-          <Paper>
-            {" "}
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Here's some content
-            </Typography>
-          </Paper>
-        </Grid>
-      </Grid>
+      <ThemeProvider theme={theme}>
+        {" "}
+        <Header goTo={handleSetPage} />
+        {page === "home" && <Home />}
+        {page === "about" && <About />}
+        {page === "contact" && <Contact />}
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 }
