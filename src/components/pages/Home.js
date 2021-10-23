@@ -1,8 +1,9 @@
 import React from "react";
-import Paper from "@mui/material/Paper";
+
+import TypingPaper from "../TypingPaper";
 
 function Home() {
-  return <div>Home</div>;
+  return <TypingPaper />;
 }
 
 export default Home;
