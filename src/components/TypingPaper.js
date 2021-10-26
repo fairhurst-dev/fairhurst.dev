@@ -5,7 +5,7 @@ import { Typing, TypingStep } from "typing-effect-reactjs";
 function TypingPaper() {
   const sequence = [
     {
-      content: "fairhurst.dev",
+      content: "fairhurst.dev Full stack web development",
       config: {
         typeSpeed: 150,
       },
@@ -15,7 +15,7 @@ function TypingPaper() {
     },
   ];
   return (
-    <Paper variant="outlined" square elevation={12}>
+    <Paper elevation={10}>
       <TypingStep sequence={sequence} />
     </Paper>
   );
