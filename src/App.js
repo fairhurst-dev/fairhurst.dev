@@ -21,7 +21,7 @@ function App() {
       <ThemeProvider theme={theme}>
         {" "}
         <Header goTo={handleSetPage} />
-        {page === "home" && <Home />}
+        {page === "home" && <Home goTo={handleSetPage} />}
         {page === "about" && <About />}
         {page === "contact" && <Contact />}
         <Footer />

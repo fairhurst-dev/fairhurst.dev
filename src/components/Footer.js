@@ -5,8 +5,8 @@ function Footer() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
-      <a color="inherit" href="https://mui.com/">
-        Your Website
+      <a color="inherit" href="fairhurst.dev">
+        fairhurst.dev
       </a>{" "}
       {new Date().getFullYear()}
       {"."}

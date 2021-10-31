@@ -5,7 +5,7 @@ import headshot from "../../media/headshot.png";
 
 import TypingPaper from "../TypingPaper";
 
-function Home() {
+function Home(props) {
   return (
     <div>
       <Box
@@ -22,7 +22,8 @@ function Home() {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "space-around",
+              justifyContent: "center",
+              alignItems: "center",
               flexWrap: "wrap",
             }}
           >
@@ -42,7 +43,14 @@ function Home() {
             alignItems="center"
             spacing={2}
           >
-            <Button variant="contained">Learn More</Button>{" "}
+            <Button
+              size="large"
+              variant="contained"
+              value="about"
+              onClick={(e) => props.goTo(e.target.value)}
+            >
+              Learn More
+            </Button>{" "}
           </Stack>
         </Paper>
         {/*<TypingPaper />*/}

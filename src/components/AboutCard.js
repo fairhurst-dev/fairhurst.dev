@@ -10,7 +10,7 @@ import {
 
 function AboutCard(props) {
   return (
-    <CardActionArea>
+    <CardActionArea onClick={() => window.open(props.card.link, "_blank")}>
       <CardHeader
         title={props.card.title}
         titleTypographyProps={{ align: "center" }}
