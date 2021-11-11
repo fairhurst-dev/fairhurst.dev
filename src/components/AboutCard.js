@@ -9,8 +9,15 @@ import {
 } from "@mui/material";
 
 function AboutCard(props) {
+  const handleOnClick = (title, link) => {
+    if (title === "Resume") props.toggleModal();
+    else window.open(link, "_blank");
+  };
+
   return (
-    <CardActionArea onClick={() => window.open(props.card.link, "_blank")}>
+    <CardActionArea
+      onClick={() => handleOnClick(props.card.title, props.card.link)}
+    >
       <CardHeader
         title={props.card.title}
         titleTypographyProps={{ align: "center" }}
