@@ -1,22 +1,44 @@
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import resume from "../media/resume.pdf";
-import { toolbarPlugin } from "@react-pdf-viewer/toolbar";
-import "@react-pdf-viewer/toolbar/lib/styles/index.css";
 import "@react-pdf-viewer/core/lib/styles/index.css";
+import { getFilePlugin } from "@react-pdf-viewer/get-file";
 
 function PDFViewer(props) {
-  const toolbarPluginInstance = toolbarPlugin(props.ToolbarPluginProps);
-  const { Toolbar } = toolbarPluginInstance;
+  const getFilePluginInstance = getFilePlugin({
+    fileNameGenerator: () => {
+      return `caroline-fairhurst-resume`;
+    },
+  });
+
+  const { DownloadButton } = getFilePluginInstance;
 
   return (
     <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js">
       <div
         style={{
-          border: "1px solid rgba(0, 0, 0, 0.3)",
-          height: "750px",
+          alignItems: "center",
+          backgroundColor: "#eeeeee",
+          borderBottom: "1px solid rgba(0, 0, 0, 0.3)",
+          display: "flex",
+          padding: "4px",
         }}
       >
-        <Viewer plugins={[toolbarPluginInstance]} fileUrl={resume} />
+        <div
+          style={{
+            padding: "10px",
+            backgroundColor: "purple",
+          }}
+        >
+          <DownloadButton />
+        </div>
+      </div>
+      <div
+        style={{
+          border: "1px solid rgba(0, 0, 0, 0.3)",
+          height: "600px",
+        }}
+      >
+        <Viewer plugins={[getFilePluginInstance]} fileUrl={resume} />
       </div>
     </Worker>
   );
