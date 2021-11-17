@@ -42,6 +42,14 @@ function Header(props) {
             <Button
               size="large"
               color="inherit"
+              value="portfolio"
+              onClick={(e) => props.goTo(e.target.value)}
+            >
+              PORTFOLIO
+            </Button>
+            <Button
+              size="large"
+              color="inherit"
               value="contact"
               onClick={(e) => props.goTo(e.target.value)}
             >

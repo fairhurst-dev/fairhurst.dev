@@ -25,8 +25,7 @@ function PDFViewer(props) {
       >
         <div
           style={{
-            padding: "10px",
-            backgroundColor: "purple",
+            padding: "5px",
           }}
         >
           <DownloadButton />

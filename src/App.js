@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Home from "./components/pages/Home";
 import Header from "./components/Header";
 import About from "./components/pages/About";
+import Portfolio from "./components/pages/Portfolio";
 import Footer from "./components/Footer";
 import Contact from "./components/pages/Contact";
 import theme from "./theme";
@@ -23,6 +24,7 @@ function App() {
         <Header goTo={handleSetPage} />
         {page === "home" && <Home goTo={handleSetPage} />}
         {page === "about" && <About />}
+        {page === "portfolio" && <Portfolio />}
         {page === "contact" && <Contact />}
         <Footer />
       </ThemeProvider>

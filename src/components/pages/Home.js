@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Button, Stack, Typography } from "@mui/material";
+import { Paper, Button, Stack } from "@mui/material";
 import { Box } from "@mui/system";
 import Typing from "../Typing";
 
