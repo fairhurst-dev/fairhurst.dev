@@ -25,7 +25,12 @@ const theme = createTheme({
     },
   },
   palette: {
-    secondary: { main: "#EB555F" },
+    primary: {
+      main: "#ad0000",
+    },
+    secondary: {
+      main: "#AD5700",
+    },
   },
   overrides: {
     MuiPaper: {

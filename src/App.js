@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Home from "./components/pages/Home";
 import Header from "./components/Header";
 import About from "./components/pages/About";
@@ -7,7 +7,6 @@ import Portfolio from "./components/pages/Portfolio";
 import Footer from "./components/Footer";
 import Contact from "./components/pages/Contact";
 import theme from "./theme";
-
 import { ThemeProvider } from "@mui/material/styles";
 
 function App() {
