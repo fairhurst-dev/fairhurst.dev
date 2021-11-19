@@ -5,6 +5,7 @@ import {
   CardContent,
   Typography,
   Box,
+  Paper,
 } from "@mui/material";
 
 function AboutCard(props) {
@@ -14,38 +15,40 @@ function AboutCard(props) {
   };
 
   return (
-    <CardActionArea
-      onClick={() => handleOnClick(props.card.title, props.card.link)}
-    >
-      <CardHeader
-        title={props.card.title}
-        titleTypographyProps={{ align: "center" }}
-        sx={{
-          backgroundColor: (theme) =>
-            theme.palette.mode === "light"
-              ? theme.palette.grey[200]
-              : theme.palette.grey[700],
-        }}
-      />
-      <CardContent>
-        <Box
+    <Paper elevation={10}>
+      <CardActionArea
+        onClick={() => handleOnClick(props.card.title, props.card.link)}
+      >
+        <CardHeader
+          title={props.card.title}
+          titleTypographyProps={{ align: "center" }}
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            mb: 2,
+            backgroundColor: (theme) =>
+              theme.palette.mode === "light"
+                ? theme.palette.grey[200]
+                : theme.palette.grey[700],
           }}
-        >
-          {props.card.icon}
-          {props.card.description.map((line) => (
-            <Typography variant="h6" color="text.secondary" key={line}>
-              {line}
-            </Typography>
-          ))}
-        </Box>
-      </CardContent>
-    </CardActionArea>
+        />
+        <CardContent>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              mb: 2,
+            }}
+          >
+            {props.card.icon}
+            {props.card.description.map((line) => (
+              <Typography variant="h6" color="text.secondary" key={line}>
+                {line}
+              </Typography>
+            ))}
+          </Box>
+        </CardContent>
+      </CardActionArea>
+    </Paper>
   );
 }
 

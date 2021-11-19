@@ -7,19 +7,20 @@ import TextHero from "../TextHero";
 function Contact() {
   const text = "Questions? Contact me below and I will get back to you!";
 
+  const boxStyle = {
+    display: "flex",
+    "& > :not(style)": {
+      m: 2,
+      width: "100vw",
+      height: "80vh",
+    },
+    backgroundColor: "secondary.main",
+  };
+
   return (
-    <Box
-      sx={{
-        display: "flex",
-        "& > :not(style)": {
-          m: 2,
-          width: "100vw",
-          height: "80vh",
-        },
-      }}
-    >
+    <Box sx={boxStyle}>
+      <TextHero text={text} />
       <Paper elevation={10}>
-        <TextHero text={text} />
         <ContactForm />
       </Paper>
     </Box>

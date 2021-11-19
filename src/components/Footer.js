@@ -3,7 +3,12 @@ import { Typography } from "@mui/material";
 
 function Footer() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography
+      sx={{ backgroundColor: "secondary.main" }}
+      variant="body2"
+      color="text.secondary"
+      align="center"
+    >
       {"Copyright © "}
       <a color="inherit" href="fairhurst.dev">
         fairhurst.dev

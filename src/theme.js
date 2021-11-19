@@ -29,7 +29,7 @@ const theme = createTheme({
       main: "#ad0000",
     },
     secondary: {
-      main: "#AD5700",
+      main: "rgb(117, 117, 117, .1)",
     },
   },
   overrides: {

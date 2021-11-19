@@ -5,10 +5,12 @@ import headshot from "../media/headshot.png";
 
 function Typing() {
   const avatarStyle = { width: 120, height: 120 };
-  const subtitleStyle = { color: "primary.main", textTransform: "uppercase" };
+  const subtitleStyle = {
+    color: "white",
+    textTransform: "uppercase",
+  };
   const titleStyle = {
     color: "white",
-    backgroundColor: "#ad0000",
     padding: "5px",
   };
 
