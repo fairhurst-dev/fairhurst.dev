@@ -9,7 +9,7 @@ function ContactForm() {
   const [message, setMessage] = useState("");
 
   return (
-    <Box>
+    <Box sx={{ minHeight: "30em" }}>
       <Formik
         initialValues={{
           name: "",
@@ -82,7 +82,7 @@ function ContactForm() {
               >
                 <Button
                   variant="contained"
-                  color="primary"
+                  color="secondary"
                   disabled={isSubmitting}
                   onClick={submitForm}
                   size="large"

@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography, Avatar, Stack } from "@mui/material";
 import Typed from "react-typed";
-import headshot from "../media/headshot.png";
 
 function Typing() {
   const avatarStyle = { width: 120, height: 120 };
@@ -21,7 +20,11 @@ function Typing() {
       alignItems="center"
       spacing={3}
     >
-      <Avatar sx={avatarStyle} src={headshot} alt="Caroline Fairhurst" />
+      <Avatar
+        sx={avatarStyle}
+        src="/assets/headshot.png"
+        alt="Caroline Fairhurst"
+      />
 
       <Typography variant="h4">
         <Typed

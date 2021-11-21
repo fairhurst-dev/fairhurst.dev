@@ -14,9 +14,9 @@ function Portfolio() {
 
   const boxStyle = {
     "& > :not(style)": {
-      m: 3,
+      m: "0 auto",
+      mb: 3,
     },
-    backgroundColor: "secondary.main",
   };
 
   const text =

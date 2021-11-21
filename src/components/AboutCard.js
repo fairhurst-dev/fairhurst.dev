@@ -23,10 +23,7 @@ function AboutCard(props) {
           title={props.card.title}
           titleTypographyProps={{ align: "center" }}
           sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[200]
-                : theme.palette.grey[700],
+            backgroundColor: (theme) => theme.palette.grey[700],
           }}
         />
         <CardContent>

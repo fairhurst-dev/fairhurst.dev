@@ -25,11 +25,13 @@ const theme = createTheme({
     },
   },
   palette: {
+    mode: "dark",
     primary: {
-      main: "#ad0000",
+      main: "#020034",
+      //  main: "#ad0000",
     },
     secondary: {
-      main: "rgb(117, 117, 117, .1)",
+      main: "rgb(232, 51, 244)",
     },
   },
   overrides: {

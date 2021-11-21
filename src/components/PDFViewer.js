@@ -1,5 +1,4 @@
 import { Worker, Viewer } from "@react-pdf-viewer/core";
-import resume from "../media/resume.pdf";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { getFilePlugin } from "@react-pdf-viewer/get-file";
 
@@ -37,7 +36,10 @@ function PDFViewer(props) {
           height: "600px",
         }}
       >
-        <Viewer plugins={[getFilePluginInstance]} fileUrl={resume} />
+        <Viewer
+          plugins={[getFilePluginInstance]}
+          fileUrl="/assets/resume.pdf"
+        />
       </div>
     </Worker>
   );

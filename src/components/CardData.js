@@ -2,7 +2,7 @@ import { GitHub } from "@mui/icons-material";
 import { SaveAlt } from "@mui/icons-material";
 import { LinkedIn } from "@mui/icons-material";
 
-const cardStyle = { color: "primary.main", fontSize: 200 };
+const cardStyle = { color: "secondary.main", fontSize: 200 };
 
 const cardData = [
   {

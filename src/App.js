@@ -17,7 +17,16 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div
+      style={{
+        minHeight: "100vh",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top center",
+        backgroundSize: "cover",
+        backgroundImage: "url(/assets/neon.jpg)",
+      }}
+      className="App"
+    >
       <ThemeProvider theme={theme}>
         {" "}
         <Header goTo={handleSetPage} />

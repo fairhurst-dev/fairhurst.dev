@@ -3,14 +3,9 @@ import { Typography } from "@mui/material";
 
 function Footer() {
   return (
-    <Typography
-      sx={{ backgroundColor: "secondary.main" }}
-      variant="body2"
-      color="text.secondary"
-      align="center"
-    >
+    <Typography variant="body2" color="secondary.main" align="center">
       {"Copyright © "}
-      <a color="inherit" href="fairhurst.dev">
+      <a color="inherit" style={{ color: "inherit" }} href="fairhurst.dev">
         fairhurst.dev
       </a>{" "}
       {new Date().getFullYear()}
