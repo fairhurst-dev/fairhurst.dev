@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import Home from "./components/pages/Home";
 import Header from "./components/Header";
 import About from "./components/pages/About";
@@ -8,35 +8,35 @@ import Footer from "./components/Footer";
 import Contact from "./components/pages/Contact";
 import theme from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
+import { render } from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [page, setPage] = useState("home");
-
-  function handleSetPage(page) {
-    setPage(page);
-  }
-
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top center",
-        backgroundSize: "cover",
-        backgroundImage: "url(/assets/neon.jpg)",
-      }}
-      className="App"
-    >
-      <ThemeProvider theme={theme}>
-        {" "}
-        <Header goTo={handleSetPage} />
-        {page === "home" && <Home goTo={handleSetPage} />}
-        {page === "about" && <About />}
-        {page === "portfolio" && <Portfolio />}
-        {page === "contact" && <Contact />}
-        <Footer />
-      </ThemeProvider>
-    </div>
+    <BrowserRouter>
+      <div
+        style={{
+          minHeight: "100vh",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top center",
+          backgroundSize: "cover",
+          backgroundImage: "url(/assets/neon.jpg)",
+        }}
+        className="App"
+      >
+        <ThemeProvider theme={theme}>
+          <Header />
+          <Routes>
+            {" "}
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>{" "}
+          <Footer />
+        </ThemeProvider>
+      </div>
+    </BrowserRouter>
   );
 }
 

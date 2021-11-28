@@ -2,8 +2,9 @@ import React from "react";
 import { Paper, Button, Stack } from "@mui/material";
 import { Box } from "@mui/system";
 import Typing from "../Typing";
+import { Link } from "react-router-dom";
 
-function Home(props) {
+function Home() {
   const learnMoreStyle = {
     backgroundColor: "secondary.main",
     ":hover": { backgroundColor: "secondary.light" },
@@ -33,15 +34,16 @@ function Home(props) {
           >
             <Typing />
           </Paper>
-          <Button
-            sx={learnMoreStyle}
-            size="large"
-            variant="contained"
-            value="about"
-            onClick={(e) => props.goTo(e.target.value)}
-          >
-            Learn More
-          </Button>{" "}
+          <Link to="/about">
+            <Button
+              sx={learnMoreStyle}
+              size="large"
+              variant="contained"
+              value="about"
+            >
+              Learn More
+            </Button>{" "}
+          </Link>
         </Stack>
       </Box>
     </div>

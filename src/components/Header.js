@@ -1,17 +1,19 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import { Stack } from "@mui/material";
+import { Toolbar, Typography, Button, IconButton, Stack } from "@mui/material";
+import { NavLink } from "react-router-dom";
+import { Box } from "@mui/system";
 
-function Header(props) {
+function Header() {
+  const secondary = "rgb(232, 51, 244)";
+
   const logoStyle = {
     cursor: "pointer",
     flexGrow: 1,
-    ":hover": { color: "white" },
+    ":link": { textDecoration: "none" },
+    ":visited": { textDecoration: "none" },
+    ":active": { textDecoration: "none" },
+    ":hover": { color: "white", textDecoration: "none" },
   };
   const appBarStyle = {
     boxShadow: "0 0 1rem 0 rgba(0, 0, 0, .5)",
@@ -39,58 +41,84 @@ function Header(props) {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+      }}
+    >
       <AppBar sx={appBarStyle}>
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          ></IconButton>
-          <Typography
-            color="secondary.main"
-            variant="h6"
-            component="div"
-            onClick={(e) => props.goTo("home")}
-            sx={logoStyle}
-          >
-            fairhurst.dev
-          </Typography>
+        <Toolbar
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            "@media (max-width: 650px)": {
+              flexDirection: "column",
+            },
+          }}
+        >
+          <NavLink style={{ textDecoration: "none" }} to="/">
+            <Typography
+              color="secondary.main"
+              variant="h6"
+              component="div"
+              sx={logoStyle}
+            >
+              fairhurst.dev
+            </Typography>
+          </NavLink>
           <Stack direction="row">
-            <Button
-              size="large"
-              color="inherit"
-              value="home"
-              onClick={(e) => props.goTo(e.target.value)}
+            <NavLink
+              to="/"
+              style={({ isActive }) => {
+                return {
+                  color: "white",
+                  backgroundColor: isActive ? secondary : "",
+                };
+              }}
             >
-              HOME
-            </Button>
-            <Button
-              size="large"
-              color="inherit"
-              value="about"
-              onClick={(e) => props.goTo(e.target.value)}
+              <Button size="large" color="inherit" value="home">
+                HOME
+              </Button>
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  color: "white",
+                  backgroundColor: isActive ? secondary : "",
+                };
+              }}
+              to="/about"
             >
-              ABOUT
-            </Button>
-            <Button
-              size="large"
-              color="inherit"
-              value="portfolio"
-              onClick={(e) => props.goTo(e.target.value)}
+              <Button size="large" color="inherit" value="about">
+                ABOUT
+              </Button>
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  color: "white",
+                  backgroundColor: isActive ? secondary : "",
+                };
+              }}
+              to="/portfolio"
             >
-              PORTFOLIO
-            </Button>
-            <Button
-              size="large"
-              color="inherit"
-              value="contact"
-              onClick={(e) => props.goTo(e.target.value)}
+              <Button size="large" color="inherit" value="portfolio">
+                PORTFOLIO
+              </Button>
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  color: "white",
+                  backgroundColor: isActive ? secondary : "",
+                };
+              }}
+              to="/contact"
             >
-              CONTACT
-            </Button>
+              <Button size="large" color="inherit" value="contact">
+                CONTACT
+              </Button>
+            </NavLink>
           </Stack>
         </Toolbar>
       </AppBar>

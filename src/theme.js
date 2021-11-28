@@ -28,7 +28,6 @@ const theme = createTheme({
     mode: "dark",
     primary: {
       main: "#020034",
-      //  main: "#ad0000",
     },
     secondary: {
       main: "rgb(232, 51, 244)",
