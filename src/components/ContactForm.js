@@ -9,7 +9,7 @@ function ContactForm() {
   const [message, setMessage] = useState("");
 
   return (
-    <Box sx={{ minHeight: "30em" }}>
+    <Box sx={{ minHeight: "30em", display: "flex" }}>
       <Formik
         initialValues={{
           name: "",
@@ -41,34 +41,49 @@ function ContactForm() {
       >
         {({ submitForm, isSubmitting }) => (
           <Box
+            sx={{ display: "flex", alignItems: "center" }}
             component="form"
-            sx={{
-              p: 5,
-              height: 100,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexWrap: "wrap",
-              "& .MuiTextField-root": { m: 2 },
-            }}
             noValidate
             autoComplete="off"
           >
             <Form>
-              <Field component={TextField} label="Name" name="name" />
-              <Field
-                component={TextField}
-                name="email"
-                type="email"
-                label="Email"
-              />
-              <Field
-                component={TextField}
-                multiline
-                rows={6}
-                name="message"
-                label="Message"
-              />
+              <Box
+                sx={{
+                  p: 5,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                }}
+              >
+                <Field
+                  sx={{ m: 2 }}
+                  component={TextField}
+                  label="Name"
+                  name="name"
+                  color="secondary"
+                  variant="filled"
+                />
+                <Field
+                  sx={{ m: 2 }}
+                  component={TextField}
+                  name="email"
+                  type="email"
+                  label="Email"
+                  variant="filled"
+                  color="secondary"
+                />
+                <Field
+                  sx={{ m: 2 }}
+                  component={TextField}
+                  multiline
+                  rows={6}
+                  variant="filled"
+                  name="message"
+                  label="Message"
+                  color="secondary"
+                />
+              </Box>
 
               <br />
 

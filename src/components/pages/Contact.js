@@ -2,7 +2,6 @@ import React from "react";
 import ContactForm from "../ContactForm";
 import { Box } from "@mui/system";
 import { Paper, Typography } from "@mui/material";
-import TextHero from "../TextHero";
 
 function Contact() {
   const text = "Questions? Contact me below and I will get back to you!";
@@ -13,16 +12,23 @@ function Contact() {
     },
     width: "100%",
     display: "flex",
-    flexDirection: "column",
     justifyContent: "center",
+    alignContent: "center",
+    padding: "2em 0",
+    alignItems: "center",
+    "@media (max-width: 650px)": {
+      flexDirection: "column",
+    },
   };
 
   return (
     <Box sx={boxStyle}>
-      <Typography sx={{ p: 2 }} textAlign="center" variant="h5" color="white">
-        {" "}
-        {text}{" "}
-      </Typography>
+      <div>
+        <Typography sx={{ p: 2 }} textAlign="center" variant="h5" color="white">
+          {" "}
+          {text}{" "}
+        </Typography>
+      </div>
       <Paper elevation={10}>
         <ContactForm />
       </Paper>

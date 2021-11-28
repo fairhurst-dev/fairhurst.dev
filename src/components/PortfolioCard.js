@@ -8,23 +8,20 @@ import {
   Paper,
 } from "@mui/material";
 
-function AboutCard(props) {
+function PortfolioCard(props) {
   const handleOnClick = (title, link) => {
     if (title === "Resume") props.toggleModal();
     else window.open(link, "_blank");
   };
 
   return (
-    <Paper elevation={10}>
+    <Paper sx={{ color: "gray" }} elevation={10}>
       <CardActionArea
         onClick={() => handleOnClick(props.card.title, props.card.link)}
       >
         <CardHeader
           title={props.card.title}
           titleTypographyProps={{ align: "center" }}
-          sx={{
-            backgroundColor: (theme) => theme.palette.grey[700],
-          }}
         />
         <CardContent>
           <Box
@@ -49,4 +46,4 @@ function AboutCard(props) {
   );
 }
 
-export default AboutCard;
+export default PortfolioCard;

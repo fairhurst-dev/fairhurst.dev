@@ -40,7 +40,7 @@ function About() {
       </Box>
       <Typography
         variant="h5"
-        sx={{ m: 5 }}
+        sx={{ mx: 5, my: 3 }}
         align="center"
         color="text.primary"
       >

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CardContainer from "../CardContainer";
 import { Box } from "@mui/system";
 import ResumeModal from "../ResumeModal";
-import TextHero from "../TextHero";
+import { Typography, Container } from "@mui/material";
 
 function Portfolio() {
   const [modal, setModal] = useState(false);
@@ -15,7 +15,6 @@ function Portfolio() {
   const boxStyle = {
     "& > :not(style)": {
       m: "0 auto",
-      mb: 3,
     },
   };
 
@@ -24,7 +23,21 @@ function Portfolio() {
 
   return (
     <Box sx={boxStyle}>
-      <TextHero text={text} />
+      <Container
+        disableGutters
+        maxWidth="sm"
+        component="main"
+        sx={{ px: 3, py: 2 }}
+      >
+        <Typography
+          variant="h5"
+          align="center"
+          color="text.primary"
+          gutterBottom
+        >
+          {text}
+        </Typography>
+      </Container>
       <CardContainer toggleModal={handleSetModal} />
       {modal && <ResumeModal toggleModal={handleSetModal} />}
     </Box>
