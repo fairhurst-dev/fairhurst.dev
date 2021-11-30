@@ -6,7 +6,7 @@ import { Box } from "@mui/system";
 
 function Header() {
   const secondary = "rgb(232, 51, 244)";
-
+  const buttonStyle = { fontFamily: "jost", fontWeight: "600" };
   const logoStyle = {
     cursor: "pointer",
     flexGrow: 1,
@@ -14,6 +14,11 @@ function Header() {
     ":visited": { textDecoration: "none" },
     ":active": { textDecoration: "none" },
     ":hover": { color: "white", textDecoration: "none" },
+    fontFamily: "jost",
+    fontStyle: "italic",
+    "@media (max-width: 650px)": {
+      p: 1.5,
+    },
   };
   const appBarStyle = {
     boxShadow: "0 0 1rem 0 rgba(0, 0, 0, .5)",
@@ -53,13 +58,14 @@ function Header() {
             justifyContent: "space-between",
             "@media (max-width: 650px)": {
               flexDirection: "column",
+              p: 1,
             },
           }}
         >
           <NavLink style={{ textDecoration: "none" }} to="/">
             <Typography
               color="secondary.main"
-              variant="h6"
+              variant="h4"
               component="div"
               sx={logoStyle}
             >
@@ -76,7 +82,12 @@ function Header() {
                 };
               }}
             >
-              <Button size="large" color="inherit" value="home">
+              <Button
+                sx={buttonStyle}
+                size="large"
+                color="inherit"
+                value="home"
+              >
                 HOME
               </Button>
             </NavLink>
@@ -89,7 +100,12 @@ function Header() {
               }}
               to="/about"
             >
-              <Button size="large" color="inherit" value="about">
+              <Button
+                sx={buttonStyle}
+                size="large"
+                color="inherit"
+                value="about"
+              >
                 ABOUT
               </Button>
             </NavLink>
@@ -102,7 +118,12 @@ function Header() {
               }}
               to="/portfolio"
             >
-              <Button size="large" color="inherit" value="portfolio">
+              <Button
+                sx={buttonStyle}
+                size="large"
+                color="inherit"
+                value="portfolio"
+              >
                 PORTFOLIO
               </Button>
             </NavLink>
@@ -115,7 +136,12 @@ function Header() {
               }}
               to="/contact"
             >
-              <Button size="large" color="inherit" value="contact">
+              <Button
+                sx={buttonStyle}
+                size="large"
+                color="inherit"
+                value="contact"
+              >
                 CONTACT
               </Button>
             </NavLink>

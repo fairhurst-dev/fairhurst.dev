@@ -15,13 +15,17 @@ function PortfolioCard(props) {
   };
 
   return (
-    <Paper sx={{ color: "gray" }} elevation={10}>
+    <Paper sx={{ height: "23em", color: "gray" }} elevation={10}>
       <CardActionArea
         onClick={() => handleOnClick(props.card.title, props.card.link)}
       >
         <CardHeader
           title={props.card.title}
-          titleTypographyProps={{ align: "center" }}
+          titleTypographyProps={{
+            align: "center",
+            fontWeight: "600",
+            color: "white",
+          }}
         />
         <CardContent>
           <Box
@@ -35,7 +39,13 @@ function PortfolioCard(props) {
           >
             {props.card.icon}
             {props.card.description.map((line) => (
-              <Typography variant="h6" color="text.secondary" key={line}>
+              <Typography
+                textAlign="center"
+                variant="h6"
+                fontFamily="varta"
+                color="text.secondary"
+                key={line}
+              >
                 {line}
               </Typography>
             ))}

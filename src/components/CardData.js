@@ -7,9 +7,9 @@ const cardStyle = { color: "secondary.main", fontSize: 200 };
 const cardData = [
   {
     title: "Github",
-    description: ["Check out the fairhurst.dev repo"],
+    description: ["Check out my repos"],
     icon: <GitHub sx={cardStyle} />,
-    link: "https://github.com/caroline717/fairhurst.dev",
+    link: "https://github.com/caroline717/",
   },
   {
     title: "Resume",

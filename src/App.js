@@ -12,6 +12,9 @@ import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  const imgURL =
+    window.innerWidth >= 700 ? "/assets/neon.jpg" : "/assets/neonMobile.png";
+
   return (
     <BrowserRouter>
       <div
@@ -20,7 +23,7 @@ function App() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "top center",
           backgroundSize: "cover",
-          backgroundImage: "url(/assets/neon.jpg)",
+          backgroundImage: `url(${imgURL})`,
         }}
         className="App"
       >

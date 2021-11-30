@@ -8,6 +8,8 @@ function Home() {
   const learnMoreStyle = {
     backgroundColor: "secondary.main",
     ":hover": { backgroundColor: "secondary.light" },
+    fontFamily: "varta",
+    fontWeight: "600",
   };
   const boxStyle = {
     display: "flex",

@@ -1,4 +1,8 @@
 import { createTheme } from "@mui/material";
+import "@fontsource/varta/300.css";
+import "@fontsource/varta/600.css";
+import "@fontsource/jost/700-italic.css";
+import "@fontsource/jost/700.css";
 
 const theme = createTheme({
   props: {
@@ -8,9 +12,8 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
+      "varta",
+      "jost",
       "Roboto",
       '"Helvetica Neue"',
       "Arial",
@@ -22,6 +25,12 @@ const theme = createTheme({
 
     h4: {
       fontWeight: "bold",
+    },
+    body2: {
+      fontFamily: "varta",
+    },
+    h5: {
+      fontFamily: "varta",
     },
   },
   palette: {

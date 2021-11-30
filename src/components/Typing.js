@@ -3,14 +3,18 @@ import { Typography, Avatar, Stack } from "@mui/material";
 import Typed from "react-typed";
 
 function Typing() {
+  const secondary = "rgb(232, 51, 244)";
   const avatarStyle = { width: 120, height: 120 };
   const subtitleStyle = {
     color: "white",
     textTransform: "uppercase",
+    fontFamily: "varta",
   };
   const titleStyle = {
-    color: "white",
+    color: secondary,
     padding: "5px",
+    fontFamily: "jost",
+    fontStyle: "italic",
   };
 
   return (

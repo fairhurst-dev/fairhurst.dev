@@ -2,11 +2,16 @@ import { Button, LinearProgress, Stack, Alert } from "@mui/material";
 import { Formik, Form, Field } from "formik";
 import { TextField } from "formik-mui";
 import React, { useState } from "react";
-import { Box } from "@mui/system";
+import { Box, fontWeight } from "@mui/system";
 import send from "../services/Email";
 
 function ContactForm() {
   const [message, setMessage] = useState("");
+
+  const formStyle = {
+    m: 2,
+    fontWeight: "600",
+  };
 
   return (
     <Box sx={{ minHeight: "30em", display: "flex" }}>
@@ -41,7 +46,7 @@ function ContactForm() {
       >
         {({ submitForm, isSubmitting }) => (
           <Box
-            sx={{ display: "flex", alignItems: "center" }}
+            sx={{ display: "flex", alignItems: "center", fontFamily: "varta" }}
             component="form"
             noValidate
             autoComplete="off"
@@ -57,7 +62,7 @@ function ContactForm() {
                 }}
               >
                 <Field
-                  sx={{ m: 2 }}
+                  sx={formStyle}
                   component={TextField}
                   label="Name"
                   name="name"
@@ -65,7 +70,7 @@ function ContactForm() {
                   variant="filled"
                 />
                 <Field
-                  sx={{ m: 2 }}
+                  sx={formStyle}
                   component={TextField}
                   name="email"
                   type="email"
@@ -74,7 +79,7 @@ function ContactForm() {
                   color="secondary"
                 />
                 <Field
-                  sx={{ m: 2 }}
+                  sx={formStyle}
                   component={TextField}
                   multiline
                   rows={6}
@@ -101,6 +106,7 @@ function ContactForm() {
                   disabled={isSubmitting}
                   onClick={submitForm}
                   size="large"
+                  sx={{ fontWeight: "600" }}
                 >
                   Submit
                 </Button>
