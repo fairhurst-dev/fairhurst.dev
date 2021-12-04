@@ -4,9 +4,17 @@ import { Box } from "@mui/system";
 import { Paper, Typography } from "@mui/material";
 
 function Contact() {
-  const text = "Questions? Contact me below and I will get back to you!";
+  const text = "Contact me below and I will get back to you!";
+
+  const titleStyle = {
+    color: "secondary.main",
+    backgroundColor: "none",
+    fontFamily: "jost",
+    fontStyle: "italic",
+  };
 
   const boxStyle = {
+    m: 1,
     "& > :not(style)": {
       m: 2,
     },
@@ -24,7 +32,10 @@ function Contact() {
   return (
     <Box sx={boxStyle}>
       <div>
-        <Typography sx={{ p: 2 }} textAlign="center" variant="h5" color="white">
+        <Typography sx={titleStyle} variant="h4">
+          Questions?
+        </Typography>
+        <Typography sx={{ pt: 2 }} variant="h5" color="white">
           {" "}
           {text}{" "}
         </Typography>
