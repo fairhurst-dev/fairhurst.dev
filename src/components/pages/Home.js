@@ -1,8 +1,9 @@
 import React from "react";
-import { Paper, Button, Stack } from "@mui/material";
+import { Paper, Button, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Typing from "../Typing";
 import { Link } from "react-router-dom";
+import { Fade } from "@mui/material";
 
 function Home() {
   const learnMoreStyle = {
@@ -37,14 +38,16 @@ function Home() {
             <Typing />
           </Paper>
           <Link to="/about">
-            <Button
-              sx={learnMoreStyle}
-              size="large"
-              variant="contained"
-              value="about"
-            >
-              Learn More
-            </Button>{" "}
+            <Fade in timeout={4000}>
+              <Button
+                sx={learnMoreStyle}
+                size="large"
+                variant="contained"
+                value="about"
+              >
+                Learn More
+              </Button>
+            </Fade>
           </Link>
         </Stack>
       </Box>
