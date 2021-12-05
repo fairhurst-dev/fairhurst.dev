@@ -12,6 +12,7 @@ function Typing() {
   };
   const titleStyle = {
     color: secondary,
+    whiteSpace: "nowrap",
     padding: "5px",
     fontFamily: "jost",
     fontStyle: "italic",
@@ -41,9 +42,9 @@ function Typing() {
       <Typography sx={subtitleStyle} variant="h5">
         <Typed
           strings={[
-            "Frontend Developer",
-            "Backend Developer",
-            "Pedagogical Expert",
+            "Full Stack Developer",
+            "UX Designer",
+            "Pedagogical Content Creator",
           ]}
           typeSpeed={40}
           backSpeed={50}

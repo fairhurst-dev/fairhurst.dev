@@ -17,17 +17,16 @@ function About() {
     fontFamily: "jost",
     fontStyle: "italic",
   };
-  const avatarStyle = { width: 150, height: 150, m: "0 auto" };
+  const avatarStyle = { width: 150, height: 150, m: "1em auto" };
   const textTop =
-    "I am a Full-Stack developer from the Jersey Shore. My passion for computing started when my parents gifted me a Gateway 98 computer which I used to browse the Encarta encyclopedia, created greeting cards, and played pixelated games. I continued my passion for computing by studying Computer Science at Stockton University. To level-up my coding, I built my own computer, powered by an AMD Ryzen chip and a MSI GPU. ";
+    "I am a Full-Stack developer from the Jersey Shore. My passion for computing started when my parents gifted me a Gateway 98 computer which I used to browse the Encarta encyclopedia, create greeting cards, and play pixelated games. I continued my passion for computing by studying Computer Science at Stockton University. During the pandemic, I built my own computer, powered by AMD Ryzen and a MSI GPU. ";
   const textBottom =
-    "Currently, I am an Associate Software Developer for Kaplan North America's Innovation Team. In my previous role as a Instructional Content Developer, I learned the power of pedagogical design: developing interactive widgets to empower user's to reach the learning objectives. In my role as a Software Developer, I continually employ serverless solutions, and ensure my code is accessible, responsive, and compatible with legacy browsers. My aim is to increase the accessibility of software and coding to more people. In my free time I enjoy playing with my cat Saint, working out, and exploring New Jersey.";
+    "Currently, I am a Cloud-Native Associate Software Developer for Kaplan North America's Innovation Team. In my previous role as an Instructional Content Developer, I learned the power of pedagogical design: developing educational interactions that enrich the learning experience. In my role as a Software Developer, I employ serverless solutions, and ensure my code is accessible, responsive, and compatible with legacy browsers. I aim to maximize the usability of software, which in turn empowers users. In my free time I enjoy playing with my cat Saint, working out, and exploring New Jersey.";
 
   return (
     <Box
       sx={{
-        px: 10,
-        py: 2,
+        p: 2,
         "@media (max-width: 800px)": { px: 2 },
       }}
     >
@@ -51,19 +50,25 @@ function About() {
         </Typography>
       </Box>
       <Box>
-        <Typography
-          variant="h6"
-          sx={{ mx: 5, my: 3, "@media (max-width: 800px)": { mx: 2 } }}
-          align="center"
-          color="text.primary"
+        <Paper
+          sx={{
+            backgroundColor: "transparent",
+            height: "max-content",
+            maxWidth: "100%",
+            m: 2,
+            p: 1,
+          }}
+          elevation={10}
         >
-          {textTop}
+          <Typography variant="h6" align="center" color="text.primary">
+            {textTop}
 
-          <Fade in timeout={2500}>
-            <Paper sx={dividerStyle}></Paper>
-          </Fade>
-          {textBottom}
-        </Typography>
+            <Fade in timeout={2500}>
+              <Paper sx={dividerStyle}></Paper>
+            </Fade>
+            {textBottom}
+          </Typography>
+        </Paper>
       </Box>
     </Box>
   );
