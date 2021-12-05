@@ -1,6 +1,6 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import { Toolbar, Typography, Button, IconButton, Stack } from "@mui/material";
+import { Toolbar, Typography, Button, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { Box } from "@mui/system";
 
@@ -23,12 +23,9 @@ function Header() {
   const appBarStyle = {
     boxShadow: "0 0 1rem 0 rgba(0, 0, 0, .5)",
     borderRadius: "5px",
-    position: "relative",
     zIndex: "1",
-    background: "inherit",
     overflow: "hidden",
     background: "transparent",
-    boxShadow: "none",
     ":before": {
       content: '""',
       position: "absolute",

@@ -1,7 +1,8 @@
 import React from "react";
 import ContactForm from "../ContactForm";
 import { Box } from "@mui/system";
-import { Paper, Typography } from "@mui/material";
+import { Fade, Paper, Typography } from "@mui/material";
+import { Slide } from "@mui/material";
 
 function Contact() {
   const text = "Contact me below and I will get back to you!";
@@ -32,17 +33,25 @@ function Contact() {
   return (
     <Box sx={boxStyle}>
       <div>
-        <Typography sx={titleStyle} variant="h4">
-          Questions?
-        </Typography>
+        <Slide direction="right" in timeout={1000}>
+          <Typography sx={titleStyle} variant="h4">
+            Questions?
+          </Typography>
+        </Slide>
         <Typography sx={{ pt: 2 }} variant="h5" color="white">
           {" "}
           {text}{" "}
         </Typography>
       </div>
-      <Paper elevation={10}>
-        <ContactForm />
-      </Paper>
+      <Slide direction="up" in timeout={1500}>
+        <Box>
+          <Fade in timeout={1500}>
+            <Paper elevation={10}>
+              <ContactForm />
+            </Paper>
+          </Fade>
+        </Box>
+      </Slide>
     </Box>
   );
 }

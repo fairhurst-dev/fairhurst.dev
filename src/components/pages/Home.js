@@ -1,9 +1,10 @@
 import React from "react";
-import { Paper, Button, Stack, Typography } from "@mui/material";
+import { Paper, Button, Stack } from "@mui/material";
 import { Box } from "@mui/system";
 import Typing from "../Typing";
 import { Link } from "react-router-dom";
 import { Fade } from "@mui/material";
+import Slide from "@mui/material/Slide";
 
 function Home() {
   const learnMoreStyle = {
@@ -32,22 +33,26 @@ function Home() {
           spacing={2}
         >
           <Paper
-            sx={{ backgroundColor: "transparent", padding: "3em" }}
+            sx={{ backgroundColor: "transparent", p: 5, mb: 4 }}
             elevation={10}
           >
             <Typing />
           </Paper>
           <Link to="/about">
-            <Fade in timeout={4000}>
-              <Button
-                sx={learnMoreStyle}
-                size="large"
-                variant="contained"
-                value="about"
-              >
-                Learn More
-              </Button>
-            </Fade>
+            <Slide direction="up" in timeout={2000}>
+              <Box>
+                <Fade in timeout={2000}>
+                  <Button
+                    sx={learnMoreStyle}
+                    size="large"
+                    variant="contained"
+                    value="about"
+                  >
+                    Learn More
+                  </Button>
+                </Fade>
+              </Box>
+            </Slide>
           </Link>
         </Stack>
       </Box>

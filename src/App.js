@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import Contact from "./components/pages/Contact";
 import theme from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
-import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

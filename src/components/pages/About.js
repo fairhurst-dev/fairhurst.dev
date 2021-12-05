@@ -1,13 +1,15 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { Avatar, Paper, Typography } from "@mui/material";
+import { Slide } from "@mui/material";
+import { Fade } from "@mui/material";
 
 function About() {
   const dividerStyle = {
     m: "10px auto",
     width: "50%",
     backgroundColor: "secondary.main",
-    height: "5px",
+    height: "8px",
   };
   const titleStyle = {
     color: "secondary.main",
@@ -39,24 +41,30 @@ function About() {
           color="text.primary"
         >
           Caroline Fairhurst
-          <Avatar
-            sx={avatarStyle}
-            src="/assets/headshot.png"
-            alt="Caroline Fairhurst"
-          />
+          <Fade in timeout={2500}>
+            <Avatar
+              sx={avatarStyle}
+              src="/assets/headshot.png"
+              alt="Caroline Fairhurst"
+            />
+          </Fade>
         </Typography>
       </Box>
-      <Typography
-        variant="h6"
-        sx={{ mx: 5, my: 3, "@media (max-width: 800px)": { mx: 2 } }}
-        align="center"
-        color="text.primary"
-      >
-        {textTop}
+      <Box>
+        <Typography
+          variant="h6"
+          sx={{ mx: 5, my: 3, "@media (max-width: 800px)": { mx: 2 } }}
+          align="center"
+          color="text.primary"
+        >
+          {textTop}
 
-        <Paper sx={dividerStyle}></Paper>
-        {textBottom}
-      </Typography>
+          <Fade in timeout={2500}>
+            <Paper sx={dividerStyle}></Paper>
+          </Fade>
+          {textBottom}
+        </Typography>
+      </Box>
     </Box>
   );
 }

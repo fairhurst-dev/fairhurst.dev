@@ -2,7 +2,7 @@ import { Button, LinearProgress, Stack, Alert } from "@mui/material";
 import { Formik, Form, Field } from "formik";
 import { TextField } from "formik-mui";
 import React, { useState } from "react";
-import { Box, fontWeight } from "@mui/system";
+import { Box } from "@mui/system";
 import send from "../services/Email";
 
 function ContactForm() {

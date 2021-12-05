@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid } from "@mui/material";
 import PortfolioCard from "./PortfolioCard";
 import cardData from "./CardData";
+import { Grow } from "@mui/material";
 
 function CardContainer(props) {
   const frostedPaper = {
@@ -9,10 +10,8 @@ function CardContainer(props) {
     borderRadius: "5px",
     position: "relative",
     zIndex: "1",
-    background: "inherit",
     overflow: "hidden",
     background: "transparent",
-    boxShadow: "none",
     padding: "3em",
     ":before": {
       content: '""',
@@ -33,9 +32,11 @@ function CardContainer(props) {
     <Container sx={frostedPaper} maxWidth="lg" component="main">
       <Grid container spacing={7} alignItems="flex-end">
         {cardData.map((card) => (
-          <Grid item key={card.title} xs={12} md={4}>
-            <PortfolioCard toggleModal={props.toggleModal} card={card} />
-          </Grid>
+          <Grow in style={{ transformOrigin: "0 0 0" }} {...{ timeout: 1500 }}>
+            <Grid item key={card.title} xs={12} md={4}>
+              <PortfolioCard toggleModal={props.toggleModal} card={card} />
+            </Grid>
+          </Grow>
         ))}
       </Grid>
     </Container>

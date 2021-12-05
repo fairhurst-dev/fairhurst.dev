@@ -1,55 +1,51 @@
-import { React, useState } from "react";
-import { Box, minHeight } from "@mui/system";
-import { DiReact } from "react-icons/di";
-import { SiMaterialui, SiServerless, SiGithub } from "react-icons/si";
-import { IconButton } from "@mui/material";
-import "../TechIcon.css";
+import { React, useState, useEffect } from "react";
+import TechIcon from "./TechIcon";
+import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 
 function TechnologyBar() {
-  const [iconText, setIconText] = useState("");
+  const [current, setCurrent] = useState(0);
+
+  const techData = [
+    { name: "React" },
+    {
+      name: "Material UI",
+    },
+    { name: "serverless" },
+    { name: "GitHub" },
+  ];
+
+  const dataLength = techData.length;
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (current === dataLength - 1) setCurrent(0);
+      else setCurrent((prev) => prev + 1);
+    }, 2000);
+  }, [current, dataLength]);
 
   return (
     <Box>
-      <Typography
-        sx={{ minHeight: "1.5em", p: 0.5 }}
-        textAlign="center"
-        variant="h4"
-        color="white"
-      >
-        {iconText}
+      <Typography sx={{ p: 1 }} color="white" variant="h4" textAlign="center">
+        {techData[current].name}{" "}
       </Typography>
+
       <Box
         display="flex"
         width="100%"
         alignItems="center"
         justifyContent="space-around"
       >
-        <IconButton
-          onMouseEnter={() => setIconText("React")}
-          onMouseLeave={() => setIconText("")}
-        >
-          {" "}
-          <DiReact className="techIcon" size="64" id="react" />
-        </IconButton>
-        <IconButton
-          onMouseEnter={() => setIconText("Material UI")}
-          onMouseLeave={() => setIconText("")}
-        >
-          <SiMaterialui className="techIcon" size="64" />
-        </IconButton>
-        <IconButton
-          onMouseEnter={() => setIconText("serverless")}
-          onMouseLeave={() => setIconText("")}
-        >
-          <SiServerless className="techIcon" size="64" />
-        </IconButton>
-        <IconButton
-          onMouseEnter={() => setIconText("GitHub")}
-          onMouseLeave={() => setIconText("")}
-        >
-          <SiGithub className="techIcon" size="64" />
-        </IconButton>
+        {techData.map((data, index) => {
+          return (
+            <TechIcon
+              key={"icon " + index}
+              active={index === current ? true : false}
+              name={data.name}
+              number={index}
+            />
+          );
+        })}
       </Box>
     </Box>
   );
