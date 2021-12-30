@@ -7,6 +7,7 @@ import Portfolio from "./components/pages/Portfolio";
 import Footer from "./components/Footer";
 import Contact from "./components/pages/Contact";
 import theme from "./theme";
+import { Box } from "@mui/system";
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,17 +17,18 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div
-        style={{
-          minHeight: "100vh",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "top center",
-          backgroundSize: "cover",
-          backgroundImage: `url(${imgURL})`,
-        }}
-        className="App"
-      >
-        <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+        <Box
+          sx={{
+            minHeight: "100vh",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "top center",
+            backgroundSize: "cover",
+            backgroundImage: `url(${imgURL})`,
+            backgroundColor: "primary.main",
+          }}
+          className="App"
+        >
           <Header />
           <Routes>
             {" "}
@@ -36,8 +38,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>{" "}
           <Footer />
-        </ThemeProvider>
-      </div>
+        </Box>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

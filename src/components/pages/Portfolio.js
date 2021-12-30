@@ -32,7 +32,7 @@ function Portfolio() {
         disableGutters
         maxWidth="sm"
         component="main"
-        sx={{ px: 3, py: 2 }}
+        sx={{ px: 3, py: 1 }}
       >
         <Typography sx={titleStyle} textAlign="center" variant="h4">
           Website powered by:

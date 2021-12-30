@@ -44,7 +44,7 @@ function ContactForm() {
           resetForm();
         }}
       >
-        {({ submitForm, isSubmitting }) => (
+        {({ submitForm, isSubmitting, values }) => (
           <Box
             sx={{ display: "flex", alignItems: "center", fontFamily: "varta" }}
             component="form"
@@ -52,6 +52,7 @@ function ContactForm() {
             autoComplete="off"
           >
             <Form>
+              {console.log("values are ", values)}
               <Box
                 sx={{
                   p: 5,

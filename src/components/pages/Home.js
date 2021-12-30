@@ -5,6 +5,7 @@ import Typing from "../Typing";
 import { Link } from "react-router-dom";
 import { Fade } from "@mui/material";
 import Slide from "@mui/material/Slide";
+import { Grid } from "@mui/material";
 
 function Home() {
   const learnMoreStyle = {
@@ -17,27 +18,46 @@ function Home() {
     display: "flex",
     justifyContent: "center",
     alignContent: "center",
+    minHeight: "80vh",
     "& > :not(style)": {
-      m: 2,
+      m: 1,
       width: "100vw",
-      height: "80vh",
     },
   };
   return (
-    <div>
-      <Box component="div" sx={boxStyle}>
-        <Stack
-          sx={{ mt: 10 }}
-          justifyContent="center"
-          alignItems="center"
-          spacing={2}
+    <Box component="div" sx={boxStyle}>
+      <Grid
+        item
+        container
+        justifyContent="center"
+        alignItems="center"
+        alignContent="center"
+        spacing={2}
+      >
+        <Grid
+          sx={{
+            m: "0 auto",
+            height: "min-content",
+          }}
+          item
+          container
+          md={6}
+          xs={11}
         >
           <Paper
-            sx={{ backgroundColor: "transparent", p: 5, mb: 4 }}
+            sx={{
+              backgroundColor: "transparent",
+              height: "max-content",
+              width: "100%",
+              mb: 4,
+              p: 3,
+            }}
             elevation={10}
           >
             <Typing />
           </Paper>
+        </Grid>
+        <Grid display="flex" justifyContent="center" item xs={12}>
           <Link to="/about">
             <Slide direction="up" in timeout={2000}>
               <Box>
@@ -54,9 +74,9 @@ function Home() {
               </Box>
             </Slide>
           </Link>
-        </Stack>
-      </Box>
-    </div>
+        </Grid>
+      </Grid>
+    </Box>
   );
 }
 
