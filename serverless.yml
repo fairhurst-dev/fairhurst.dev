@@ -1,0 +1,10 @@
+app: fairhurst-dev
+name: fairhurst-dev
+component: website
+stage: main
+
+inputs:
+  src:
+    src: ./src
+    hook: npm run build
+    dist: ./build
