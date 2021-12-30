@@ -42,7 +42,7 @@ function Home() {
           item
           container
           md={6}
-          xs={10}
+          xs={11}
         >
           <Paper
             sx={{

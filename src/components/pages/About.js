@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import { Avatar, Paper, Typography } from "@mui/material";
 import { Slide } from "@mui/material";
 import { Fade } from "@mui/material";
+import { Grid } from "@mui/material";
 
 function About() {
   const dividerStyle = {
@@ -24,14 +25,16 @@ function About() {
     "Currently, I am a Cloud-Native Associate Software Developer for Kaplan North America's Innovation Team. In my previous role as an Instructional Content Developer, I learned the power of pedagogical design: developing educational interactions that enrich the learning experience. In my role as a Software Developer, I employ serverless solutions, and ensure my code is accessible, responsive, and compatible with legacy browsers. I aim to maximize the usability of software, which in turn empowers users. In my free time I enjoy playing with my cat Saint, working out, and exploring New Jersey.";
 
   return (
-    <Box
+    <Grid
+      justifyContent="center"
       sx={{
         p: 2,
+        justifyContent: "center",
         "@media (max-width: 800px)": { px: 2 },
       }}
     >
       {" "}
-      <Box>
+      <Grid xs={12} display="flex" justifyContent="center" item container>
         <Typography
           as="div"
           sx={titleStyle}
@@ -48,29 +51,30 @@ function About() {
             />
           </Fade>
         </Typography>
-      </Box>
-      <Box>
-        <Paper
-          sx={{
-            backgroundColor: "transparent",
-            height: "max-content",
-            maxWidth: "100%",
-            m: 2,
-            p: 1,
-          }}
-          elevation={10}
-        >
-          <Typography variant="h6" align="center" color="text.primary">
-            {textTop}
+      </Grid>
+      <Grid item container display="flex" justifyContent="center" xs={12}>
+        <Grid item md={8} xs={12}>
+          <Paper
+            sx={{
+              backgroundColor: "transparent",
+              height: "max-content",
+              m: 2,
+              p: 1,
+            }}
+            elevation={10}
+          >
+            <Typography variant="h6" align="center" color="text.primary">
+              {textTop}
 
-            <Fade in timeout={2500}>
-              <Paper sx={dividerStyle}></Paper>
-            </Fade>
-            {textBottom}
-          </Typography>
-        </Paper>
-      </Box>
-    </Box>
+              <Fade in timeout={2500}>
+                <Paper sx={dividerStyle}></Paper>
+              </Fade>
+              {textBottom}
+            </Typography>
+          </Paper>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }
 
