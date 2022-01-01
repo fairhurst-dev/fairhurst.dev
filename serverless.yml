@@ -4,6 +4,7 @@ component: website
 stage: dev
 
 inputs:
+  domain: dev.fairhurst.dev
   src:
     src: ./src
     hook: npm run build
