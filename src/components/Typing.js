@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Avatar, Stack } from "@mui/material";
+import { Fade } from "@mui/material";
 import Typed from "react-typed";
 
 function Typing() {
@@ -25,11 +26,13 @@ function Typing() {
       alignItems="center"
       spacing={3}
     >
-      <Avatar
-        sx={avatarStyle}
-        src="/assets/headshot.png"
-        alt="Caroline Fairhurst"
-      />
+      <Fade in timeout={2500}>
+        <Avatar
+          sx={avatarStyle}
+          src="https://fairhurstdevassets.s3.amazonaws.com/headshot2.jpg"
+          alt="Caroline Fairhurst"
+        />
+      </Fade>
 
       <Typography variant="h4">
         <Typed

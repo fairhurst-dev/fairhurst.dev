@@ -31,8 +31,13 @@ function CardContainer(props) {
   return (
     <Container sx={frostedPaper} maxWidth="lg" component="main">
       <Grid container spacing={7} alignItems="flex-end">
-        {cardData.map((card) => (
-          <Grow in style={{ transformOrigin: "0 0 0" }} {...{ timeout: 1500 }}>
+        {cardData.map((card, i) => (
+          <Grow
+            key={i}
+            in
+            style={{ transformOrigin: "0 0 0" }}
+            {...{ timeout: 1500 }}
+          >
             <Grid item key={card.title} xs={12} md={4}>
               <PortfolioCard toggleModal={props.toggleModal} card={card} />
             </Grid>

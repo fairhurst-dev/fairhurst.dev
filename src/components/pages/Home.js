@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Button, Stack } from "@mui/material";
+import { Paper, Button } from "@mui/material";
 import { Box } from "@mui/system";
 import Typing from "../Typing";
 import { Link } from "react-router-dom";

@@ -13,8 +13,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const imgURL =
-    window.innerWidth >= 700 ? "/assets/neon.jpg" : "/assets/neonMobile.png";
-
+    window.innerWidth >= 700
+      ? "https://fairhurstdevassets.s3.amazonaws.com/neon.jpg"
+      : "https://fairhurstdevassets.s3.amazonaws.com/neonMobile.png";
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
