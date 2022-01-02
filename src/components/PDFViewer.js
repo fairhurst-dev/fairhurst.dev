@@ -37,6 +37,9 @@ function PDFViewer(props) {
         }}
       >
         <Viewer
+          theme={{
+            theme: "dark",
+          }}
           plugins={[getFilePluginInstance]}
           fileUrl="/assets/resume.pdf"
         />

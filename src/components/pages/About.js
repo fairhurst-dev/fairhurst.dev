@@ -1,7 +1,5 @@
 import React from "react";
-import { Box } from "@mui/system";
 import { Avatar, Paper, Typography } from "@mui/material";
-import { Slide } from "@mui/material";
 import { Fade } from "@mui/material";
 import { Grid } from "@mui/material";
 
@@ -46,7 +44,7 @@ function About() {
           <Fade in timeout={2500}>
             <Avatar
               sx={avatarStyle}
-              src="/assets/headshot.png"
+              src="https://fairhurstdevassets.s3.amazonaws.com/headshot2.jpg"
               alt="Caroline Fairhurst"
             />
           </Fade>
