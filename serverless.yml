@@ -1,11 +1,12 @@
 app: fairhurst-dev
 name: fairhurst-dev
 component: website
-stage: dev
+stage: main
 
 inputs:
-  domain: dev.fairhurst.dev
   src:
     src: ./src
     hook: npm run build
     dist: ./build
+  domain: fairhurst.dev
+  region: us-east-1
