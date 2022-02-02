@@ -44,7 +44,7 @@ function About() {
           <Fade in timeout={2500}>
             <Avatar
               sx={avatarStyle}
-              src="https://fairhurstdevassets.s3.amazonaws.com/headshot2.jpg"
+              src="https://fairhurstdevassets.s3.amazonaws.com/headshotweb.jpg"
               alt="Caroline Fairhurst"
             />
           </Fade>
