@@ -3,6 +3,6 @@ import App from "./App";
 
 test("renders fairhurst.dev link", () => {
   render(<App />);
-  const linkElement = screen.getByText(/fairhurst.dev/i);
+  const linkElement = screen.getAllByText(/fairhurst.dev/i);
   expect(linkElement).toBeInTheDocument();
 });
