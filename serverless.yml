@@ -4,8 +4,9 @@ component: website
 stage: dev
 
 inputs:
-  domain: dev.fairhurst.dev
   src:
     src: ./src
     hook: npm run build
     dist: ./build
+  domain: dev.fairhurst.dev
+  region: us-east-1
