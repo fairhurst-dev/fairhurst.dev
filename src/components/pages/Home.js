@@ -61,7 +61,7 @@ function Home() {
           <Link to="/about">
             <Slide direction="up" in timeout={2000}>
               <Box>
-                <Fade in timeout={2000}>
+                <Fade in timeout={3000}>
                   <Button
                     sx={learnMoreStyle}
                     size="large"

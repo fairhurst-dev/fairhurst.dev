@@ -26,10 +26,10 @@ function Typing() {
       alignItems="center"
       spacing={3}
     >
-      <Fade in timeout={2500}>
+      <Fade in timeout={3000}>
         <Avatar
           sx={avatarStyle}
-          src="https://fairhurstdevassets.s3.amazonaws.com/headshot2.jpg"
+          src="https://fairhurstdevassets.s3.amazonaws.com/headshotweb.jpg"
           alt="Caroline Fairhurst"
         />
       </Fade>
