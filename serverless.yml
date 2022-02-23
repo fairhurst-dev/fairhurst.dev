@@ -9,5 +9,5 @@ inputs:
     src: ./src
     hook: npm run build
     dist: ./build
-  domain: dev.fairhurst.dev
+  domain: fairhurst.dev
   region: us-east-1
