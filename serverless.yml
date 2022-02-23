@@ -2,7 +2,7 @@ app: fairhurst-dev
 name: fairhurst-dev
 org: cfairhurst99
 component: website
-stage: dev
+stage: main
 
 inputs:
   src:
