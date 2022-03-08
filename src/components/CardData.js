@@ -9,7 +9,7 @@ const cardData = [
     title: "Github",
     description: ["Check out my repos"],
     icon: <GitHub sx={cardStyle} />,
-    link: "https://github.com/caroline717/",
+    link: "https://github.com/fairhurst-dev/",
   },
   {
     title: "Resume",
