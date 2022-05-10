@@ -52,7 +52,6 @@ function ContactForm() {
             autoComplete="off"
           >
             <Form>
-              {console.log("values are ", values)}
               <Box
                 sx={{
                   p: 5,

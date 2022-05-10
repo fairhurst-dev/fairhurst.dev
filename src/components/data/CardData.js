@@ -1,10 +1,14 @@
-import { GitHub } from "@mui/icons-material";
-import { SaveAlt } from "@mui/icons-material";
-import { LinkedIn } from "@mui/icons-material";
+import { GitHub, SaveAlt } from "@mui/icons-material";
 
 const cardStyle = { color: "secondary.main", fontSize: 200 };
 
 const cardData = [
+  {
+    title: "Magic Mirror",
+    description: ["Read about my Magic Mirror build"],
+    icon: <GitHub sx={cardStyle} />,
+    link: "/portfolio/mirror",
+  },
   {
     title: "Github",
     description: ["Check out my repos"],
@@ -16,12 +20,6 @@ const cardData = [
     description: ["Click to download"],
     icon: <SaveAlt sx={cardStyle} />,
     link: "",
-  },
-  {
-    title: "Linkedin",
-    description: ["Connect with me on Linkedin"],
-    icon: <LinkedIn sx={cardStyle} />,
-    link: "https://www.linkedin.com/in/carolinefairhurst99/",
   },
 ];
 

@@ -1,8 +1,8 @@
 import React from "react";
 import ContactForm from "../ContactForm";
 import { Box } from "@mui/system";
-import { Fade, Paper, Typography } from "@mui/material";
-import { Slide } from "@mui/material";
+import { Fade, Paper, Typography, Slide, Button } from "@mui/material";
+import { LinkedIn } from "@mui/icons-material";
 
 function Contact() {
   const text = "Contact me below and I will get back to you!";
@@ -30,6 +30,8 @@ function Contact() {
     },
   };
 
+  const iconStyle = { color: "secondary.main", fontSize: 50, padding: "5px" };
+
   return (
     <Box sx={boxStyle}>
       <div>
@@ -42,6 +44,20 @@ function Contact() {
           {" "}
           {text}{" "}
         </Typography>
+
+        <Button
+          sx={{ my: 2, textTransform: "capitalize" }}
+          target="_blank"
+          href="https://www.linkedin.com/in/carolinefairhurst99/"
+          display="flex"
+          variant="outlined"
+          color="secondary"
+        >
+          <Typography variant="h6" textTransform="capitalize" color="white">
+            Connect with me
+          </Typography>
+          <LinkedIn sx={iconStyle} />
+        </Button>
       </div>
       <Slide direction="up" in timeout={1500}>
         <Box>

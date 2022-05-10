@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
 import PortfolioCard from "./PortfolioCard";
-import cardData from "./CardData";
+import cardData from "./data/CardData";
 import { Grow } from "@mui/material";
 
 function CardContainer(props) {

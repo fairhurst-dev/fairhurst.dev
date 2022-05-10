@@ -6,6 +6,7 @@ import About from "./components/pages/About";
 import Portfolio from "./components/pages/Portfolio";
 import Footer from "./components/Footer";
 import Contact from "./components/pages/Contact";
+import Mirror from "./components/pages/Mirror";
 import theme from "./theme";
 import { Box } from "@mui/system";
 import { ThemeProvider } from "@mui/material/styles";
@@ -36,6 +37,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/mirror" element={<Mirror />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>{" "}
           <Footer />

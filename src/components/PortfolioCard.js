@@ -10,8 +10,16 @@ import {
 
 function PortfolioCard(props) {
   const handleOnClick = (title, link) => {
-    if (title === "Resume") props.toggleModal();
-    else window.open(link, "_blank");
+    switch (title) {
+      case "Resume":
+        props.toggleModal();
+        break;
+      case "Magic Mirror":
+        window.open(link, "_self");
+        break;
+      default:
+        window.open(link, "_blank");
+    }
   };
 
   return (
