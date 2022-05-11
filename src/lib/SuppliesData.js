@@ -93,7 +93,7 @@ const suppliesList = {
       url: "",
     },
   ],
-  "Manage the cables": [
+  "Manage the cables and hang!": [
     {
       text: "PASOW 50pcs Cable Ties",
       url: "https://www.amazon.com/gp/product/B0154MS9Q0/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1",
@@ -114,8 +114,6 @@ const suppliesList = {
       text: "Electrical Tape",
       url: "",
     },
-  ],
-  "Hang the mirror!": [
     {
       text: "Hillman 6-in Hanging System 75lb",
       url: "https://www.lowes.com/pd/Hillman-6-in-Hangman-Picture-Hanging-System/3058191",

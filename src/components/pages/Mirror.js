@@ -1,9 +1,11 @@
 import React from "react";
-import { Avatar, Paper, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import { Fade } from "@mui/material";
 import { Grid } from "@mui/material";
-import mirrorText from "../data/MirrorText";
 import SuppliesList from "../mirror/SuppliesList";
+import Hardware from "../mirror/Hardware";
+import Software from "../mirror/Software";
+import Intro from "../mirror/Intro";
 
 function Mirror() {
   const dividerStyle = {
@@ -24,7 +26,6 @@ function Mirror() {
     fontFamily: "jost",
     padding: "5px",
   };
-  const avatarStyle = { width: 150, height: 150, m: "1em auto" };
 
   return (
     <Grid
@@ -45,13 +46,6 @@ function Mirror() {
           color="text.primary"
         >
           Building a Magic Mirror
-          <Fade in timeout={2500}>
-            <Avatar
-              sx={avatarStyle}
-              src="https://fairhurstdevassets.s3.amazonaws.com/headshotweb.jpg"
-              alt="Caroline Fairhurst"
-            />
-          </Fade>
         </Typography>
       </Grid>
       <Grid item container display="flex" justifyContent="center" xs={12}>
@@ -68,9 +62,7 @@ function Mirror() {
             <Typography sx={subtitleStyle} variant="h4">
               Intro
             </Typography>
-            <Typography variant="h6" align="center" color="text.primary">
-              {mirrorText.intro}
-            </Typography>{" "}
+            <Intro />
             <Fade in timeout={2500}>
               <Paper sx={dividerStyle}></Paper>
             </Fade>
@@ -78,6 +70,20 @@ function Mirror() {
               Supplies
             </Typography>
             <SuppliesList />
+            <Fade in timeout={2500}>
+              <Paper sx={dividerStyle}></Paper>
+            </Fade>
+            <Typography sx={subtitleStyle} variant="h4">
+              Software
+            </Typography>
+            <Software />
+            <Fade in timeout={2500}>
+              <Paper sx={dividerStyle}></Paper>
+            </Fade>
+            <Typography sx={subtitleStyle} variant="h4">
+              Hardware
+            </Typography>
+            <Hardware />
           </Paper>
         </Grid>
       </Grid>
