@@ -19,7 +19,7 @@ function Software() {
         </Link>
         , a credit card sized fully functioning and wifi ready computer.
       </Typography>
-      &nbsp;
+      <br />
       <Typography variant="h5" color="text.primary">
         Setup The RaspberryPi
       </Typography>
@@ -83,7 +83,7 @@ function Software() {
         </Link>{" "}
         to give it a more mirror-y feel.
       </Typography>
-      &nbsp;
+      <br />
       <Typography variant="h5" color="text.primary">
         Setup The Development Environment
       </Typography>
@@ -227,7 +227,7 @@ function Software() {
         , that autostarts the mirror application as soon as the RaspberryPi
         boots.
       </Typography>
-      &nbsp;
+      <br />
       <Typography variant="h5" color="text.primary">
         Customize The Modules
       </Typography>
