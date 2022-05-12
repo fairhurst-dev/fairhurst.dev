@@ -39,7 +39,6 @@ function Mirror() {
       {" "}
       <Grid xs={12} display="flex" justifyContent="center" item container>
         <Typography
-          as="div"
           sx={titleStyle}
           variant="h2"
           align="center"

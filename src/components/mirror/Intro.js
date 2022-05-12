@@ -6,7 +6,7 @@ function Intro() {
   return (
     <Box>
       {" "}
-      <Typography variant="h6" align="center" color="text.primary">
+      <Typography variant="body1" align="center" color="text.primary">
         The Magic Mirror, an idea first popularized by the Brothers Grimm in an
         1812 fairy tale, continues to be replicated to this day, such as being
         used to conceal TVs. What do makers mean when they say a “Magic Mirror”?

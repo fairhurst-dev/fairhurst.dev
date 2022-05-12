@@ -5,88 +5,94 @@ import { Box } from "@mui/system";
 function Hardware() {
   return (
     <Box>
-      <Typography as="div" variant="body1" color="text.primary">
+      <Typography variant="body1" color="text.primary">
         My job as Javascript Software Developer leverages the web technologies
         every day that are necessary to configure the mirror’s software. But the
         hardware proved much more challenging for me; I had never built anything
         using wood before. The basic MagicMirror components are a computer
         monitor, a piece of one-way glass, and the RaspberryPi. My criteria for
         successful mirror housing was:
-        <List
-          sx={{
-            borderColor: "secondary.main",
-            borderWidth: "5px",
-            borderStyle: "solid",
-            width: "max-content",
-            margin: "0 auto",
-          }}
-        >
-          {" "}
-          <ListItem>
-            <ListItemText>
-              1. Hold the one-way glass flush against the monitor to minimize
-              light spillage
-            </ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText>
-              2. Conceal ugly wires without baking the RaspberryPi
-            </ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText>
-              3. Allow the entire unit to hang on the wall
-            </ListItemText>
-          </ListItem>
-        </List>
+      </Typography>
+      <List
+        sx={{
+          borderColor: "secondary.main",
+          borderWidth: "5px",
+          borderStyle: "solid",
+          width: "max-content",
+          margin: "0 auto",
+        }}
+      >
+        {" "}
+        <ListItem>
+          <ListItemText>
+            1. Hold the one-way glass flush against the monitor to minimize
+            light spillage
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            2. Conceal ugly wires without baking the RaspberryPi
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            3. Allow the entire unit to hang on the wall
+          </ListItemText>
+        </ListItem>
+      </List>
+      <Typography variant="body1" color="text.primary">
         My design for the mirror house consisted of a frame, piece of one-way
         glass attached to the back, then the monitor sandwiched on top, encased
         with a “dummy box”, lastly a piece of plywood with a french cleat on the
         back of the dummy box.
-        <Box marginBottom="5px" maxHeight="200px" maxWidth="200px">
-          <img
-            alt="exploded view"
-            width="100%"
-            src="https://fairhurstdevassets.s3.amazonaws.com/mirror/exploded_view_2.png"
-          />
-        </Box>
+      </Typography>
+      <Box marginBottom="5px" maxHeight="200px" maxWidth="200px">
+        <img
+          alt="exploded view"
+          width="100%"
+          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/exploded_view_2.png"
+        />
+      </Box>
+      <Typography variant="body1" color="text.primary">
         Everyone’s MagicMirror housing will be different, based on dimensions,
         engineering considerations, and design preferences! I gleaned
         inspiration from:
-        <List sx={{ ml: 3 }}>
-          <ListItem>
-            <Link
-              color="#fff"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.youtube.com/watch?v=OYlloiaBINo&t=343s&ab_channel=BreakItYourself"
-            >
-              DIY Smart Mirror - Full Tutorial
-            </Link>
-          </ListItem>{" "}
-          <ListItem>
-            {" "}
-            <Link
-              color="#fff"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.youtube.com/watch?v=fkVBAcvbrjU&t=25s&ab_channel=HackerShack"
-            >
-              How to Make a Raspberry Pi Smart Mirror
-            </Link>
-          </ListItem>{" "}
-          <ListItem>
-            {" "}
-            <Link
-              color="#fff"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://blog.dylanjpierce.com/raspberrypi/magicmirror/tutorial/2015/12/27/build-a-magic-mirror.html"
-            >
-              Building MirrorMirror – /home/pierce
-            </Link>
-          </ListItem>
-        </List>
+      </Typography>
+      <List sx={{ ml: 3 }}>
+        <ListItem>
+          <Link
+            color="#fff"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/watch?v=OYlloiaBINo&t=343s&ab_channel=BreakItYourself"
+          >
+            DIY Smart Mirror - Full Tutorial
+          </Link>
+        </ListItem>{" "}
+        <ListItem>
+          {" "}
+          <Link
+            color="#fff"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/watch?v=fkVBAcvbrjU&t=25s&ab_channel=HackerShack"
+          >
+            How to Make a Raspberry Pi Smart Mirror
+          </Link>
+        </ListItem>{" "}
+        <ListItem>
+          {" "}
+          <Link
+            color="#fff"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://blog.dylanjpierce.com/raspberrypi/magicmirror/tutorial/2015/12/27/build-a-magic-mirror.html"
+          >
+            Building MirrorMirror – /home/pierce
+          </Link>
+        </ListItem>
+      </List>
+      <Typography variant="body1" color="text.primary">
         I would highly recommend sketching or rendering your design for the
         housing before you begin building.
       </Typography>
@@ -94,7 +100,7 @@ function Hardware() {
       <Typography variant="h5" color="text.primary">
         Gather Your Material
       </Typography>
-      <Typography as="div" variant="body1" color="text.primary">
+      <Typography variant="body1" color="text.primary">
         Before you ever cut a piece of wood for your mirror, you’ll first need
         to obtain a monitor. Here are the specs for the monitor I used
         (unfortunately because it is older, I could not find a link to the exact
@@ -147,7 +153,7 @@ function Hardware() {
       <Typography variant="h5" color="text.primary">
         Build The Frame
       </Typography>
-      <Typography as="div" variant="body1" color="text.primary">
+      <Typography variant="body1" color="text.primary">
         To determine the length of my pieces, I needed the opening of the frame
         to be slightly smaller than the length and width of the piece of glass.
         This differential will provide a small strip of frame so the glass can
@@ -178,7 +184,7 @@ function Hardware() {
       <Typography variant="h5" color="text.primary">
         Build The Dummy Box{" "}
       </Typography>
-      <Typography as="div" variant="body1" color="text.primary">
+      <Typography variant="body1" color="text.primary">
         Carefully lay your stripped monitor, screen down on top of the glass.
         Take measurements of the sandwiched monitor and glass. To calculate the
         long sides of your dummy box, add in the thickness of the pieces of the
@@ -213,7 +219,7 @@ function Hardware() {
       <Typography variant="h5" color="text.primary">
         Manage The Cables
       </Typography>
-      <Typography as="div" variant="body1" color="text.primary">
+      <Typography variant="body1" color="text.primary">
         The TFT monitor used only supports VGA, so wire your RaspberryPi to a
         microHDMI to VGA adapter, then connect the adapter to the VGA to VGA
         cable, and finally into the monitor. Plug in the monitor’s power chord
@@ -229,7 +235,7 @@ function Hardware() {
       <Typography variant="h5" color="text.primary">
         Hang, Test, and Enjoy!
       </Typography>
-      <Typography as="div" variant="body1" color="text.primary">
+      <Typography variant="body1" color="text.primary">
         Select where to hang your mirror, and remember you will need to be near
         a wall outlet. The French Cleat will support up to 75lbs in drywall,
         with no stud needed! However, this cleat will not work in plaster. If

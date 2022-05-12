@@ -29,6 +29,10 @@ const theme = createTheme({
     body2: {
       fontFamily: "varta",
     },
+    body1: {
+      fontFamily: "varta",
+      fontSize: "1.25rem",
+    },
     h5: {
       fontFamily: "varta",
     },
