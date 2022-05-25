@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Grid } from "@mui/material";
-import { Box } from "@mui/system";
+import ImageModal from "../ImageModal";
 
 function Intro() {
   return (
@@ -30,13 +30,12 @@ function Intro() {
         justifyContent="center"
         alignItems="center"
       >
-        <Box marginBottom="5px" maxHeight="200px" maxWidth="200px">
-          <img
-            alt="exploded view"
-            width="100%"
-            src="/assets/tempImgs/magic_mirror_ui.png"
-          />
-        </Box>
+        <ImageModal
+          altText="magic mirror UI"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_ui.png"
+          height="200px"
+          width="200px"
+        />
       </Grid>
     </Grid>
   );

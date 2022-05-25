@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { Typography, Link } from "@mui/material";
+import ImageModal from "../ImageModal";
 
 function Software() {
   return (
@@ -298,10 +299,36 @@ function Software() {
         should see a small icon depicting a mouse over a rectangle. Click it.
         Now try hovering over the date in the UI. The inspector tool tells us
         the CSS class name for the date element is{" "}
-        <code>date.normal.medium</code> Inside your MagicMirror repo, navigate
-        to the css folder and create a file custom.css. Write a new rule set
-        targeting the class of your date element. Save, refresh, and check
-        back!You can do this for any element of the MagicMirror, and change many
+        <code>date.normal.medium</code>
+      </Typography>
+      <ImageModal
+        margin="5px auto"
+        altText="date element class"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/date_class.png"
+        height="300px"
+        width="400px"
+      />
+      <Typography variant="body1" color="text.primary">
+        Inside your MagicMirror repo, navigate to the css folder and create a
+        file custom.css. Write a new rule set targeting the class of your date
+        element.{" "}
+        <code>
+          .date.normal.medium&#123;
+          <br />
+          &nbsp;&nbsp;color: green <br />
+          &#125;
+        </code>{" "}
+        Save, refresh, and check back!{" "}
+      </Typography>
+      <ImageModal
+        margin="5px auto"
+        altText="green date element"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/green_date.png"
+        height="300px"
+        width="400px"
+      />
+      <Typography variant="body1" color="text.primary">
+        You can do this for any element of the MagicMirror, and change many
         properties including font size, style, size, shadows, animations and
         more.
       </Typography>

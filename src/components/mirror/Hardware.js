@@ -1,6 +1,7 @@
 import React from "react";
 import { ListItem, ListItemText, List, Typography, Link } from "@mui/material";
 import { Box } from "@mui/system";
+import ImageModal from "../ImageModal";
 
 function Hardware() {
   return (
@@ -53,13 +54,13 @@ function Hardware() {
         with a “dummy box”, lastly a piece of plywood with a french cleat on the
         back of the dummy box.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="300px">
-        <img
-          alt="exploded view"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/exploded_view_2.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="exploded view"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/exploded_view_2.png"
+        height="300px"
+        width="300px"
+      />
       <Typography variant="body1" color="text.primary">
         Everyone’s MagicMirror housing will be different, based on dimensions,
         engineering considerations, and design preferences! I gleaned
@@ -113,13 +114,13 @@ function Hardware() {
         (unfortunately because it is older, I could not find a link to the exact
         monitor):
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="300px">
-        <img
-          alt="monitor specs"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/monitor_specs.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="monitor specs"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/monitor_specs.png"
+        height="300px"
+        width="300px"
+      />
       <Typography variant="body1" color="text.primary">
         The monitor had been lying unused in a cardboard box, and my friend Mark
         so generously gifted it to me. In the spirit of being sustainable, I
@@ -149,13 +150,13 @@ function Hardware() {
       <Typography variant="body1" color="text.primary">
         Next, take measurements of your new naked monitor.
       </Typography>
-      <Box margin="5px auto" maxHeight="500px" maxWidth="500px">
-        <img
-          alt="monitor dimensions"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/monitor_dimensions.jpeg"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="monitor dimensions"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/monitor_dimensions.jpeg"
+        height="500px"
+        width="500px"
+      />
       <Typography variant="body1" color="text.primary">
         Based on your monitor’s height and width, you’ll need a piece of one-way
         glass(confusingly also called{" "}
@@ -171,13 +172,13 @@ function Hardware() {
         outward, while the other side will lie flat against your monitor,
         allowing the images from your MagicMirror^2 platform to shine through!
       </Typography>{" "}
-      <Box margin="5px auto" maxHeight="500px" maxWidth="500px">
-        <img
-          alt="glass dimensions"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/glass_dimensions.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="glass dimensions"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/glass_dimensions.png"
+        height="500px"
+        width="500px"
+      />
       <Typography variant="body1" color="text.primary">
         One-way glass can be hard to find, and the pandemic caused prices to
         rise due to supply chain issues, resulting in a glass shortage. Buying
@@ -189,13 +190,13 @@ function Hardware() {
         I had to call about 8 different shops before I found a shop that either
         carried it or quoted me a reasonable price:
       </Typography>
-      <Box margin="5px auto" maxHeight="500px" maxWidth="500px">
-        <img
-          alt="glass quote"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/glass_quote.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="glass quote"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/glass_quote.png"
+        height="500px"
+        width="500px"
+      />
       <Typography variant="body1" color="text.primary">
         I would recommend a piece of glass no more than ¼ inch thick to allow
         the images from the MagicMirror^2 to shine through the glass. Still
@@ -232,13 +233,13 @@ function Hardware() {
         </Link>
         .
       </Typography>
-      <Box margin="5px auto" maxHeight="500px" maxWidth="300px">
-        <img
-          alt="pine plywood and boards"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/plywood.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="pine plywood and boards"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/plywood.png"
+        height="500px"
+        width="300px"
+      />
       <Typography variant="body1" color="text.primary">
         I also must recommend a{" "}
         <Link
@@ -274,13 +275,13 @@ function Hardware() {
         boards edges at a 90 degree angle. My final dimensions were 12 3/16
         inches x 20 inches.
       </Typography>
-      <Box margin="5px auto" maxHeight="500px" maxWidth="500px">
-        <img
-          alt="frame dimensions"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_dimensions.jpeg"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="frame dimensions"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_dimensions.png"
+        height="500px"
+        width="500px"
+      />
       <Typography variant="body1" color="text.primary">
         here After making the cuts, I used the corner clamp and the{" "}
         <Link
@@ -292,25 +293,25 @@ function Hardware() {
         </Link>{" "}
         to attach my boards.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="clamped frame corner"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/clamped_frame_corner.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="clamped frame corner"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/clamped_frame_corner.png"
+        height="300px"
+        width="200px"
+      />
       <Typography variant="body1" color="text.primary">
         Remember to spread the glue on evenly, and clamp for at least 30
         minutes. After all sides were glued, I allowed the frame to dry
         overnight.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="frame and corner clamp"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_and_clamp.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="frame and corner clamp"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_and_clamp.png"
+        height="300px"
+        width="200px"
+      />
       <Typography variant="body1" color="text.primary">
         I reinforced my frame by screwing a{" "}
         <Link
@@ -340,13 +341,13 @@ function Hardware() {
         . Although the can recommended 2 coats, I actually used 3 to achieve a
         richer look. Allow your stain to dry overnight.
       </Typography>{" "}
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="stained frame"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/stained_frame.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="stained frame"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/stained_frame.png"
+        height="300px"
+        width="200px"
+      />
       <Typography variant="body1" color="text.primary">
         Placing the stained side of the frame down, I spread a line of silicone
         to the very edge of the frame opening. Use a plastic knife or spoon to
@@ -355,13 +356,13 @@ function Hardware() {
         some paint cans on the back of the glass around the frame to clamp the
         glass down. Allow the frame to dry for 24 hours.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="frame with mirror glass attached"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_with_glass.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="frame with mirror glass attached"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_with_glass.png"
+        height="300px"
+        width="200px"
+      />
       <br />
       <Typography variant="h5" color="text.primary">
         Build The Dummy Box
@@ -373,24 +374,24 @@ function Hardware() {
         wood (in my case .75 inches per side). The end grains of the short
         boards will butt against the face side of the long boards.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="dummy box dimensions"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_dimensions.jpeg"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="dummy box dimensions"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_dimensions.png"
+        height="300px"
+        width="200px"
+      />
       <Typography variant="body1" color="text.primary">
         Use the corner clamp to glue and dry overnight. I used four more .75inch
         corner brackets to reinforce the box.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="dummy box corner"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_corner.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="dummy box corner"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_corner.png"
+        height="300px"
+        width="200px"
+      />
       <Typography variant="body1" color="text.primary">
         {" "}
         Ensure the monitor is correctly lined up against the glass, and
@@ -406,13 +407,13 @@ function Hardware() {
         , lay one in each corner flat against the back of the monitor. Mark the
         holes for the screws with a pencil, and screw the braces in.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="corner braces"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/corner_brackets.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="corner brackets"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/corner_brackets.png"
+        height="300px"
+        width="200px"
+      />
       <Typography variant="body1" color="text.primary">
         Remove the dummy box from the rest of the frame and monitor. Apply your
         sanding and stain.
@@ -433,13 +434,13 @@ function Hardware() {
         I did not glue the box to the frame; If the monitor fails, you need to
         be able to deconstruct the mirror housing to resolve.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="200px">
-        <img
-          alt="box attached to frame"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/side_view.png"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="box attached to frame"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/side_view.png"
+        height="300px"
+        width="200px"
+      />
       <Typography variant="body1" color="text.primary">
         The last piece needed for the dummy box is the back plywood. Determine
         the orientation of your mirror, and note which side is the top. To
@@ -447,13 +448,13 @@ function Hardware() {
         dummy box board to 1/3rd of the length of the dummy box. To determine
         the length, measure from the outer width of your dummy box.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="400px">
-        <img
-          alt="backboard dimensions"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/backboard_dimensions.jpeg"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="backboard dimensions"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/backboard_dimensions.png"
+        height="300px"
+        width="400px"
+      />
       <Typography variant="body1" color="text.primary">
         Apply the sandpaper and staining (for the last time :D ). Once dry, use
         a level and attach the “Picture Side” of your french cleat to the
@@ -461,13 +462,13 @@ function Hardware() {
         dummy box. Again, I recommend not to glue in case a monitor component
         fails.
       </Typography>
-      <Box margin="5px auto" maxHeight="300px" maxWidth="400px">
-        <img
-          alt="french cleat"
-          width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_plywood.jpeg"
-        />
-      </Box>
+      <ImageModal
+        margin="5px auto"
+        altText="french cleat"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_plywood.png"
+        height="300px"
+        width="400px"
+      />
       <br />
       <Typography variant="h5" color="text.primary">
         Connect And Manage The Cables
@@ -527,7 +528,17 @@ function Hardware() {
         </Link>{" "}
         to the back of the power box for the Raspberry Pi, Mirror. I then placed
         another square of velcro on the back of the monitor. Velcro the squares
-        to secure. I stuck a few{" "}
+        to secure.
+        <ImageModal
+          margin="5px auto"
+          altText="velcro squares"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/velcro_squares.png"
+          height="500px"
+          width="300px"
+        />
+      </Typography>
+      <Typography variant="body1" color="text.primary">
+        I stuck a few{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -538,6 +549,13 @@ function Hardware() {
         to the back of the monitor, and tucked the power and VGA cables into the
         slots.
       </Typography>
+      <ImageModal
+        margin="5px auto"
+        altText="back view of mirror"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/back_view.png"
+        height="500px"
+        width="300px"
+      />
       <br />
       <Typography variant="h5" color="text.primary">
         Hang, Test, and Enjoy!
@@ -550,6 +568,13 @@ function Hardware() {
         “Wall Side” of the french cleat against the wall and use a pencil to
         mark the screw holes. Drill pilot holes, and then screw in the cleat.
       </Typography>
+      <ImageModal
+        margin="5px auto"
+        altText="french cleat in the wall"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_wall.png"
+        height="500px"
+        width="300px"
+      />
       <Typography variant="body1" color="text.primary">
         Hang, and plug the A/C splitter into the wall outlet. The RaspberryPi
         should boot automatically, and then the MagicMirror^2 platform should be
@@ -578,7 +603,13 @@ function Hardware() {
         http://192.168.xxx.xxx:8080/remote.html. I created an iPhone home screen
         shortcut from the web address!
       </Typography>
-      INSERT MAGIC REMOTE SCREENSHOTS HERE
+      <ImageModal
+        margin="5px auto"
+        altText="magic remote"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_remote.png"
+        height="500px"
+        width="300px"
+      />
       <Typography variant="body1" color="text.primary">
         Enjoy!
       </Typography>
