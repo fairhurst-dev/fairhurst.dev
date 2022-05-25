@@ -377,7 +377,7 @@ function Hardware() {
       <ImageModal
         margin="5px auto"
         altText="dummy box dimensions"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_dimensions.png"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_dimensions.jpeg"
         height="300px"
         width="200px"
       />
@@ -451,7 +451,7 @@ function Hardware() {
       <ImageModal
         margin="5px auto"
         altText="backboard dimensions"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/backboard_dimensions.png"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/backboard_dimensions.jpeg"
         height="300px"
         width="400px"
       />
@@ -465,7 +465,7 @@ function Hardware() {
       <ImageModal
         margin="5px auto"
         altText="french cleat"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_plywood.png"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_plywood.jpeg"
         height="300px"
         width="400px"
       />
@@ -571,7 +571,7 @@ function Hardware() {
       <ImageModal
         margin="5px auto"
         altText="french cleat in the wall"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_wall.png"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_wall.jpeg"
         height="500px"
         width="300px"
       />
