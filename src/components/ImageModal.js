@@ -1,17 +1,6 @@
 import React, { useState } from "react";
 import { Box } from "@mui/system";
-import { Modal } from "@mui/material";
-
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 500,
-  borderWidth: "5px",
-  borderStyle: "solid",
-  borderColor: "secondary.main",
-};
+import { Dialog, DialogContent } from "@mui/material";
 
 function ImageModal({ imgURL, altText, height, width, margin }) {
   const [open, setOpen] = useState(false);
@@ -31,16 +20,22 @@ function ImageModal({ imgURL, altText, height, width, margin }) {
         <img alt={altText} width="100%" src={imgURL} />
       </Box>
 
-      <Modal
+      <Dialog
+        fullWidth={true}
+        maxWidth={"lg"}
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        PaperProps={{
+          style: {
+            backgroundColor: "transparent",
+            boxShadow: "none",
+          },
+        }}
       >
-        <Box sx={style}>
+        <DialogContent>
           <img alt={altText} width="100%" src={imgURL} />
-        </Box>
-      </Modal>
+        </DialogContent>
+      </Dialog>
     </>
   );
 }

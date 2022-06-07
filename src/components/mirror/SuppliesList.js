@@ -8,16 +8,16 @@ function SuppliesList() {
   return (
     <Box>
       <List>
-        <Grid container spacing={2}>
+        <Grid container spacing={0}>
           {subheadings.map((sub, i) => (
-            <Grid key={i} item xs={12} lg={4}>
-              <ListItem>
+            <Grid p={1} key={i} item xs={12} lg={4}>
+              <ListItem sx={{ padding: "0" }}>
                 <ListItemText primaryTypographyProps={{ fontSize: "22px" }}>
                   {sub}
                 </ListItemText>
               </ListItem>
               {suppliesList[sub].map((item, j) => (
-                <ListItem key={j} sx={{ ml: "1em" }}>
+                <ListItem key={j} sx={{ ml: "1em", padding: "0" }}>
                   <ListItemText primaryTypographyProps={{ fontSize: "18px" }}>
                     {" "}
                     -{" "}

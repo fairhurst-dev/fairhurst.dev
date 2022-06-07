@@ -2,6 +2,7 @@ import React from "react";
 import { Box } from "@mui/system";
 import { Typography, Link } from "@mui/material";
 import ImageModal from "../ImageModal";
+import Code from "./Code";
 
 function Software() {
   return (
@@ -178,15 +179,11 @@ function Software() {
         >
           MagicMirror repo
         </Link>
-        , and then cloned the repo from my own fork.
-        <code>
-          git clone https://github.com/Your-Username/MagicMirror.git
-        </code>{" "}
+        , and then cloned the repo from my own fork.{" "}
+        <Code text="git clone https://github.com/Your-Username/MagicMirror.git" />
         Additionally, I added the official MagicMirror repo as an upstream
-        remote repo.{" "}
-        <code>
-          git remote add upstream https://github.com/MichMich/MagicMirror.git
-        </code>{" "}
+        remote repo.
+        <Code text="git remote add upstream https://github.com/MichMich/MagicMirror.git" />
         This allows you to easily fetch and merge changes that are made to the
         upstream repo to keep your MagicMirror platform up to date with the
         latest releases!
@@ -249,9 +246,10 @@ function Software() {
         </Link>
         available. Each module (should)include some documentation on how to
         install it, but most will consist of cloning the modules and{" "}
-        <code>npm install</code> inside this new module directory. Other modules
-        will require you to create a developer account with a service and obtain
-        an API key to fetch data.
+        <Code text="npm install" />
+        inside this new module directory. Other modules will require you to
+        create a developer account with a service and obtain an API key to fetch
+        data.
       </Typography>
       <Typography variant="body1" color="text.primary">
         The easiest way to view the changes you make to your MagicMirror^2 is to
@@ -261,19 +259,20 @@ function Software() {
         changes). The default address, found in the config.js is localhost:8080.
         Save your changes and refresh your browser to see your changes
         reflected! If you’re not seeing your changes, or seeing a config error,
-        run: <code>npm run config:check</code>The most common error is a syntax
-        error (did you forget a curly brace )? Formatting with Prettier can help
-        to avoid these mistakes.
+        run:{" "}
+        <Code text="git remote add upstream https://github.com/MichMich/MagicMirror.git" />
+        The most common error is a syntax error (did you forget a curly brace )?
+        Formatting with Prettier can help to avoid these mistakes.
       </Typography>
       <Typography variant="body1" color="text.primary">
         Once you’re happy with your initial configuration and modules, push to
         your github repo:{" "}
-        <code>
-          git add .<br />
+        <Code
+          text=" git add .<br />
           git commit -m “added first module”
           <br />
-          git push
-        </code>{" "}
+          git push"
+        />
         For the adventurous, you can even{" "}
         <Link
           color="secondary.main"
@@ -299,7 +298,7 @@ function Software() {
         should see a small icon depicting a mouse over a rectangle. Click it.
         Now try hovering over the date in the UI. The inspector tool tells us
         the CSS class name for the date element is{" "}
-        <code>date.normal.medium</code>
+        <Code text="date.normal.medium" />
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -312,12 +311,11 @@ function Software() {
         Inside your MagicMirror repo, navigate to the css folder and create a
         file custom.css. Write a new rule set targeting the class of your date
         element.{" "}
-        <code>
-          .date.normal.medium&#123;
-          <br />
-          &nbsp;&nbsp;color: green <br />
-          &#125;
-        </code>{" "}
+        <Code
+          text={`.date.normal.medium{
+                color: green 
+                }`}
+        />
         Save, refresh, and check back!{" "}
       </Typography>
       <ImageModal

@@ -4,9 +4,9 @@ import ImageModal from "../ImageModal";
 
 function Intro() {
   return (
-    <Grid container spacing={8}>
+    <Grid mb={3} container spacing={2}>
       {" "}
-      <Grid alignItems="center" xs={12} md={8} item container>
+      <Grid alignItems="center" s={12} md={8} item container>
         <Typography variant="body1" align="center" color="text.primary">
           The Magic Mirror, an idea first popularized by the Brothers Grimm in
           an 1812 fairy tale, continues to be replicated to this day, such as
@@ -23,7 +23,7 @@ function Intro() {
         </Typography>
       </Grid>
       <Grid
-        xs={12}
+        s={12}
         md={4}
         container
         item
@@ -33,8 +33,8 @@ function Intro() {
         <ImageModal
           altText="magic mirror UI"
           imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_ui.png"
-          height="200px"
-          width="200px"
+          height="250px"
+          width="250px"
         />
       </Grid>
     </Grid>

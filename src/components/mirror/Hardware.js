@@ -58,8 +58,8 @@ function Hardware() {
         margin="5px auto"
         altText="exploded view"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/exploded_view_2.png"
-        height="300px"
-        width="300px"
+        height="400px"
+        width="400px"
       />
       <Typography variant="body1" color="text.primary">
         Everyone’s MagicMirror housing will be different, based on dimensions,
@@ -118,8 +118,8 @@ function Hardware() {
         margin="5px auto"
         altText="monitor specs"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/monitor_specs.png"
-        height="300px"
-        width="300px"
+        height="400px"
+        width="400px"
       />
       <Typography variant="body1" color="text.primary">
         The monitor had been lying unused in a cardboard box, and my friend Mark
@@ -154,8 +154,8 @@ function Hardware() {
         margin="5px auto"
         altText="monitor dimensions"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/monitor_dimensions.jpeg"
-        height="500px"
-        width="500px"
+        height="600px"
+        width="600px"
       />
       <Typography variant="body1" color="text.primary">
         Based on your monitor’s height and width, you’ll need a piece of one-way
@@ -176,8 +176,8 @@ function Hardware() {
         margin="5px auto"
         altText="glass dimensions"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/glass_dimensions.png"
-        height="500px"
-        width="500px"
+        height="600px"
+        width="600px"
       />
       <Typography variant="body1" color="text.primary">
         One-way glass can be hard to find, and the pandemic caused prices to
@@ -194,8 +194,8 @@ function Hardware() {
         margin="5px auto"
         altText="glass quote"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/glass_quote.png"
-        height="500px"
-        width="500px"
+        height="700px"
+        width="700px"
       />
       <Typography variant="body1" color="text.primary">
         I would recommend a piece of glass no more than ¼ inch thick to allow
@@ -237,8 +237,8 @@ function Hardware() {
         margin="5px auto"
         altText="pine plywood and boards"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/plywood.png"
-        height="500px"
-        width="300px"
+        height="600px"
+        width="400px"
       />
       <Typography variant="body1" color="text.primary">
         I also must recommend a{" "}
@@ -278,9 +278,9 @@ function Hardware() {
       <ImageModal
         margin="5px auto"
         altText="frame dimensions"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_dimensions.png"
-        height="500px"
-        width="500px"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_dimensions.jpeg"
+        height="600px"
+        width="600px"
       />
       <Typography variant="body1" color="text.primary">
         here After making the cuts, I used the corner clamp and the{" "}
@@ -297,8 +297,8 @@ function Hardware() {
         margin="5px auto"
         altText="clamped frame corner"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/clamped_frame_corner.png"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="350px"
       />
       <Typography variant="body1" color="text.primary">
         Remember to spread the glue on evenly, and clamp for at least 30
@@ -309,8 +309,8 @@ function Hardware() {
         margin="5px auto"
         altText="frame and corner clamp"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_and_clamp.png"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="400px"
       />
       <Typography variant="body1" color="text.primary">
         I reinforced my frame by screwing a{" "}
@@ -345,8 +345,8 @@ function Hardware() {
         margin="5px auto"
         altText="stained frame"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/stained_frame.png"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="400px"
       />
       <Typography variant="body1" color="text.primary">
         Placing the stained side of the frame down, I spread a line of silicone
@@ -360,8 +360,8 @@ function Hardware() {
         margin="5px auto"
         altText="frame with mirror glass attached"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_with_glass.png"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="400px"
       />
       <br />
       <Typography variant="h5" color="text.primary">
@@ -378,8 +378,8 @@ function Hardware() {
         margin="5px auto"
         altText="dummy box dimensions"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_dimensions.jpeg"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="500px"
       />
       <Typography variant="body1" color="text.primary">
         Use the corner clamp to glue and dry overnight. I used four more .75inch
@@ -389,8 +389,8 @@ function Hardware() {
         margin="5px auto"
         altText="dummy box corner"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/dummy_box_corner.png"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="350px"
       />
       <Typography variant="body1" color="text.primary">
         {" "}
@@ -411,8 +411,8 @@ function Hardware() {
         margin="5px auto"
         altText="corner brackets"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/corner_brackets.png"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="350px"
       />
       <Typography variant="body1" color="text.primary">
         Remove the dummy box from the rest of the frame and monitor. Apply your
@@ -438,8 +438,8 @@ function Hardware() {
         margin="5px auto"
         altText="box attached to frame"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/side_view.png"
-        height="300px"
-        width="200px"
+        height="500px"
+        width="350px"
       />
       <Typography variant="body1" color="text.primary">
         The last piece needed for the dummy box is the back plywood. Determine
@@ -452,8 +452,8 @@ function Hardware() {
         margin="5px auto"
         altText="backboard dimensions"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/backboard_dimensions.jpeg"
-        height="300px"
-        width="400px"
+        height="500px"
+        width="500px"
       />
       <Typography variant="body1" color="text.primary">
         Apply the sandpaper and staining (for the last time :D ). Once dry, use
@@ -466,8 +466,8 @@ function Hardware() {
         margin="5px auto"
         altText="french cleat"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_plywood.jpeg"
-        height="300px"
-        width="400px"
+        height="500px"
+        width="500px"
       />
       <br />
       <Typography variant="h5" color="text.primary">
@@ -534,7 +534,7 @@ function Hardware() {
           altText="velcro squares"
           imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/velcro_squares.png"
           height="500px"
-          width="300px"
+          width="350px"
         />
       </Typography>
       <Typography variant="body1" color="text.primary">
@@ -554,7 +554,7 @@ function Hardware() {
         altText="back view of mirror"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/back_view.png"
         height="500px"
-        width="300px"
+        width="500px"
       />
       <br />
       <Typography variant="h5" color="text.primary">
@@ -573,7 +573,7 @@ function Hardware() {
         altText="french cleat in the wall"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/french_cleat_wall.jpeg"
         height="500px"
-        width="300px"
+        width="500px"
       />
       <Typography variant="body1" color="text.primary">
         Hang, and plug the A/C splitter into the wall outlet. The RaspberryPi
@@ -608,7 +608,7 @@ function Hardware() {
         altText="magic remote"
         imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_remote.png"
         height="500px"
-        width="300px"
+        width="500px"
       />
       <Typography variant="body1" color="text.primary">
         Enjoy!
