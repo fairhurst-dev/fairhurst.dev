@@ -1,13 +1,21 @@
 import React from "react";
-import { ListItem, ListItemText, List, Typography, Link } from "@mui/material";
+import {
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+  Link,
+  Grid,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import ImageModal from "../ImageModal";
+import Code from "./Code";
 
 function Hardware() {
   return (
     <Box>
       <Typography variant="body1" color="text.primary">
-        My job as Javascript Software Developer leverages the{" "}
+        My job as a software developer leveraging{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -15,11 +23,12 @@ function Hardware() {
         >
           web technologies
         </Link>{" "}
-        every day that are necessary to configure the mirror’s software. But the
-        hardware proved much more challenging for me; I had never built anything
-        using wood before. The basic MagicMirror components are a computer
-        monitor, a piece of one-way glass, and the RaspberryPi. My criteria for
-        successful mirror housing was:
+        and version control prepared me for the software implementation of the
+        mirror. But the hardware proved much more challenging for me; I had
+        never built anything using wood before.
+      </Typography>
+      <Typography variant="body1" color="text.primary">
+        My criteria for successful mirror housing was:{" "}
       </Typography>
       <List
         sx={{
@@ -33,38 +42,36 @@ function Hardware() {
         {" "}
         <ListItem>
           <ListItemText>
-            1. Hold the one-way glass flush against the monitor to minimize
-            light spillage
+            1. Minimize light spilling into the mirror housing
           </ListItemText>
         </ListItem>
         <ListItem>
           <ListItemText>
-            2. Conceal ugly wires without baking the RaspberryPi
+            2.Conceal the wires without baking the RaspberryPi
           </ListItemText>
         </ListItem>
         <ListItem>
-          <ListItemText>
-            3. Allow the entire unit to hang on the wall
-          </ListItemText>
+          <ListItemText>3. Hang the unit on the wall</ListItemText>
         </ListItem>
       </List>
       <Typography variant="body1" color="text.primary">
-        My design for the mirror house consisted of a frame, piece of one-way
-        glass attached to the back, then the monitor sandwiched on top, encased
-        with a “dummy box”, lastly a piece of plywood with a french cleat on the
-        back of the dummy box.
+        My mirror housing design consisted of a frame, a piece of one-way glass
+        attached to the frame back, followed by the monitor lying directly on
+        top of the glass. The monitor and glass were encased with a “dummy box”
+        attached to the back of the frame. Lastly, a piece of plywood with a
+        french cleat was attached to the back of the dummy box.
       </Typography>
       <ImageModal
         margin="5px auto"
         altText="exploded view"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/exploded_view_2.png"
-        height="400px"
-        width="400px"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/labeled_exploded_view.png"
+        height="500px"
+        width="500px"
       />
       <Typography variant="body1" color="text.primary">
-        Everyone’s MagicMirror housing will be different, based on dimensions,
-        engineering considerations, and design preferences! I gleaned
-        inspiration from:
+        Your Magic Mirror housing will depend on your monitor and glass
+        dimensions and design preferences! I gleaned inspiration for the housing
+        from:
       </Typography>
       <List sx={{ ml: 3 }}>
         <ListItem>
@@ -101,18 +108,46 @@ function Hardware() {
         </ListItem>
       </List>
       <Typography variant="body1" color="text.primary">
-        I would highly recommend sketching or rendering your design for the
-        housing before you begin building.
+        I encourage you to sketch or render your design for the housing before
+        you ever purchase a piece of wood. I began by hand-drawing my designs:
+      </Typography>
+      <Grid container>
+        <ImageModal
+          margin="5px auto"
+          altText="hand sketch frame"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/hand_sketch_1.png"
+          height="400px"
+          width="400px"
+        />
+        <ImageModal
+          margin="5px auto"
+          altText="hand sketch box"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/hand_sketch_2.png"
+          height="400px"
+          width="400px"
+        />
+      </Grid>
+      <Typography variant="body1" color="text.primary">
+        Then I 3D rendered the design using{" "}
+        <Link
+          color="secondary.main"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.ptc.com/en/products/education/free-software/creo-college-download"
+        >
+          Creo Parametric.
+        </Link>{" "}
+        You can download all the 3D files for my mirror housing here.
       </Typography>
       <br />
       <Typography variant="h5" color="text.primary">
         Gather Your Materials
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Before you ever cut a piece of wood for your mirror, you’ll first need
-        to obtain a monitor. Here are the specs for the monitor I used
-        (unfortunately because it is older, I could not find a link to the exact
-        monitor):
+        Start by obtaining a monitor and a piece of glass, as this will dictate
+        all of the dimensions for your housing. Here are the specs for the
+        monitor I used (unfortunately because it is older, I could not find a
+        link to the exact monitor):
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -122,33 +157,29 @@ function Hardware() {
         width="400px"
       />
       <Typography variant="body1" color="text.primary">
-        The monitor had been lying unused in a cardboard box, and my friend Mark
-        so generously gifted it to me. In the spirit of being sustainable, I
-        highly encourage you to also reuse a screen you have such as an old
-        computer monitor or TV.
+        This monitor had been lying unused in a cardboard box, and my friend
+        Mark so generously gifted it to me. In the spirit of being sustainable,
+        I highly encourage you to also reuse a screen you have such as an old
+        computer monitor or TV, or pick-up a used monitor.
       </Typography>
       <Typography variant="body1" color="text.primary">
-        The materials and dimensions described in the next steps will rely
-        entirely on what monitor you chose. The thinner the monitor, the lighter
-        your mirror will be and the closer it will sit to the wall.
-        Additionally, it can help to find a monitor with inputs on the back of
-        the monitor as opposed to the bottom. This will allow your housing to
-        have a snug fit around the monitor, without worrying about crushing
-        cables or having to drill holes.
+        The thinner the monitor, the lighter your mirror will be and the closer
+        it will sit to the wall. It can help to find a monitor with inputs on
+        the back of the monitor as opposed to the bottom. This will allow your
+        housing to fit snugly around the monitor, without drilling holes to
+        conceal wires.
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Start by stripping your monitor of its plastic casing. This will ensure
-        the glass lays flat against the monitor, so no light spills through and
-        distorts the MagicMirror^2 images. I had to remove tiny screws to allow
-        myself to pry the plastic case open. Next, you’ll want to remove the
-        metal bezel around the front of the monitor. Using my fingers and a
-        flathead screwdriver, I pried the metal bezel away from the monitor.
-        There was even more metal casing around the back of the monitor that
-        potentially could have been removed, but I decided to leave it intact to
-        protect the circuitry.
-      </Typography>
-      <Typography variant="body1" color="text.primary">
-        Next, take measurements of your new naked monitor.
+        Strip your monitor of its plastic casing and bezel. This will help to
+        satisfy design constraint 1: minimizing light spilling into the housing.
+        Less light spilling equals brighter and clearer MagicMirror2 modules.
+        Stripping the casing will vary by monitor; I had to remove tiny screws
+        to allow myself to pry the plastic case open. I also removed the metal
+        bezel around the front of the monitor using my fingers and a flathead
+        screwdriver. There was more metal casing around the back of the monitor
+        that potentially could have been removed, but I left it intact to
+        protect the monitor’s electronic components. Take measurements of your
+        new naked monitor.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -158,8 +189,8 @@ function Hardware() {
         width="600px"
       />
       <Typography variant="body1" color="text.primary">
-        Based on your monitor’s height and width, you’ll need a piece of one-way
-        glass(confusingly also called{" "}
+        Based on your monitor’s height and width, buy a piece of one-way glass
+        (confusingly also called{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -167,10 +198,12 @@ function Hardware() {
         >
           two-way mirror glass
         </Link>
-        ). This special glass reflects, or mirrors, light from one side, and
-        allows light to shine through the other. The mirror side will face
-        outward, while the other side will lie flat against your monitor,
-        allowing the images from your MagicMirror^2 platform to shine through!
+        ). This special glass reflects light from one side, and allows light to
+        shine through the other. The mirror side of the glass faces outward,
+        while the opposite side lies flat against your monitor, allowing the
+        modules from your MagicMirror2 platform to shine through! Look for glass
+        no more than ¼ inch thick to maximize the brightness and clarity of the
+        modules.
       </Typography>{" "}
       <ImageModal
         margin="5px auto"
@@ -181,14 +214,21 @@ function Hardware() {
       />
       <Typography variant="body1" color="text.primary">
         One-way glass can be hard to find, and the pandemic caused prices to
-        rise due to supply chain issues, resulting in a glass shortage. Buying
-        one-way glass online can come with hefty shipping costs, and a single
-        order of a custom cut piece of specialty glass can be very expensive. I
-        would recommend contacting your local glass suppliers, either building
-        suppliers or automobile glass distributors, and inquiring about prices.
-        You won’t have to pay shipping if the store is close enough for pick up.
-        I had to call about 8 different shops before I found a shop that either
-        carried it or quoted me a reasonable price:
+        rise due to supply chain issues, resulting in a{" "}
+        <Link
+          color="secondary.main"
+          target="_blank"
+          href="https://www.mynews13.com/fl/orlando/news/2021/03/03/pandemic-the-root-of-glass-manufacturing-lag--winter-park-business-owner-says"
+        >
+          glass shortage
+        </Link>{" "}
+        Buying one-way glass online can come with hefty shipping costs, and a
+        single order of a custom cut piece of specialty glass can be very
+        expensive. I opted to shop around my local building material suppliers
+        and automobile glass distributors. Try to find a location that will
+        allow for pickup to eliminate shipping costs. I had to call eight
+        different stores before I found a shop that either carried two-way glass
+        or quoted me a reasonable price:
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -198,9 +238,7 @@ function Hardware() {
         width="700px"
       />
       <Typography variant="body1" color="text.primary">
-        I would recommend a piece of glass no more than ¼ inch thick to allow
-        the images from the MagicMirror^2 to shine through the glass. Still
-        can’t find a reasonable price? Some builders used{" "}
+        Still can’t find a reasonable price? Some makers used{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -208,14 +246,13 @@ function Hardware() {
         >
           acrylic sheets or reflective film over a mirror
         </Link>
-        . However, I did not want to experience any distortion while looking at
-        my reflection in the mirror, so glass was the obvious choice. This also
-        means the mirror will look flawless when it’s off!
+        over a mirror. However, I did not want to experience any distortion
+        while looking at my reflection in the mirror, so glass was the obvious
+        choice.
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Now you need some wood. As a first time woodworker, I opted for pine,
-        known as a beginner friendly type of wood. To give myself plenty of room
-        for mistakes, I bought{" "}
+        Now for the wood. If you are a first-time woodworker like me, choose
+        pine, a beginner-friendly type of wood. I bought{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -240,26 +277,14 @@ function Hardware() {
         height="600px"
         width="400px"
       />
-      <Typography variant="body1" color="text.primary">
-        I also must recommend a{" "}
-        <Link
-          color="secondary.main"
-          target="_blank"
-          href="https://www.lowes.com/pd/Pony-1-1-8-in-Corner-Clamp/1000989056"
-        >
-          corner clamp
-        </Link>{" "}
-        for both the frame and the dummy box.
-      </Typography>
       <br />
       <Typography variant="h5" color="text.primary">
         Build The Frame
       </Typography>
       <Typography variant="body1" color="text.primary">
-        To determine the length of my pieces, I needed the opening of the frame
-        to be slightly smaller than the length and width of the piece of glass.
-        This differential will provide a small strip of frame so the glass can
-        be attached with{" "}
+        The opening of the frame should be slightly smaller than the length and
+        width of the piece of glass to provide a small lip for the glass to be
+        attached to with{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -272,7 +297,7 @@ function Hardware() {
         3/16 inches x 15 inches. Before you cut the longer pieces of wood,
         remember to add in the width of the wood (in my case 2.5 inches per
         side). The end grain of the shorter boards will butt against the longer
-        boards edges at a 90 degree angle. My final dimensions were 12 3/16
+        boards’ edges at a 90-degree angle. My final dimensions were 12 3/16
         inches x 20 inches.
       </Typography>
       <ImageModal
@@ -283,7 +308,15 @@ function Hardware() {
         width="600px"
       />
       <Typography variant="body1" color="text.primary">
-        here After making the cuts, I used the corner clamp and the{" "}
+        After making the cuts, I used the{" "}
+        <Link
+          color="secondary.main"
+          target="_blank"
+          href="https://www.lowes.com/pd/Pony-1-1-8-in-Corner-Clamp/1000989056"
+        >
+          corner clamp
+        </Link>{" "}
+        and the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -291,27 +324,25 @@ function Hardware() {
         >
           wood glue
         </Link>{" "}
-        to attach my boards.
+        to attach the boards. Spread the glue on evenly, and clamp for at least
+        30 minutes. After all sides are glued, allow the frame to dry overnight.
       </Typography>
-      <ImageModal
-        margin="5px auto"
-        altText="clamped frame corner"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/clamped_frame_corner.png"
-        height="500px"
-        width="350px"
-      />
-      <Typography variant="body1" color="text.primary">
-        Remember to spread the glue on evenly, and clamp for at least 30
-        minutes. After all sides were glued, I allowed the frame to dry
-        overnight.
-      </Typography>
-      <ImageModal
-        margin="5px auto"
-        altText="frame and corner clamp"
-        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_and_clamp.png"
-        height="500px"
-        width="400px"
-      />
+      <Grid container>
+        <ImageModal
+          margin="5px auto"
+          altText="clamped frame corner"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/clamped_frame_corner.png"
+          height="500px"
+          width="350px"
+        />
+        <ImageModal
+          margin="5px auto"
+          altText="frame and corner clamp"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/frame_and_clamp.png"
+          height="500px"
+          width="400px"
+        />
+      </Grid>
       <Typography variant="body1" color="text.primary">
         I reinforced my frame by screwing a{" "}
         <Link
@@ -322,7 +353,10 @@ function Hardware() {
           .75inch steel corner brace
         </Link>{" "}
         into each inner corner. I definitely would do this differently next
-        time, so the corner braces are not visible. Next, a light sand job with{" "}
+        time, so the corner braces are not visible.{" "}
+      </Typography>
+      <Typography variant="body1" color="text.primary">
+        Next, sand your frame with{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -330,7 +364,7 @@ function Hardware() {
         >
           fine sandpaper
         </Link>{" "}
-        and I was ready to{" "}
+        and then{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -338,7 +372,7 @@ function Hardware() {
         >
           stain
         </Link>
-        . Although the can recommended 2 coats, I actually used 3 to achieve a
+        . Although the stain recommended 2 coats, I actually used 3 to achieve a
         richer look. Allow your stain to dry overnight.
       </Typography>{" "}
       <ImageModal
@@ -349,12 +383,12 @@ function Hardware() {
         width="400px"
       />
       <Typography variant="body1" color="text.primary">
-        Placing the stained side of the frame down, I spread a line of silicone
-        to the very edge of the frame opening. Use a plastic knife or spoon to
+        Placing the stained side of the frame down, spread a line of silicone
+        along the lip of the frame opening. Use a plastic knife or spoon to
         evenly spread the silicone on the frame. Carefully attach the one-way
-        glass to the back, and remember to place the mirror side down! I stacked
-        some paint cans on the back of the glass around the frame to clamp the
-        glass down. Allow the frame to dry for 24 hours.
+        glass to the back of the frame, and remember to place the mirror side
+        down! Stack heavy objects such as paint cans on the back of the glass to
+        clamp it to the frame. Allow the silicone to dry for 24 hours.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -368,11 +402,14 @@ function Hardware() {
         Build The Dummy Box
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Carefully lay your stripped monitor, screen down on top of the glass.
-        Take measurements of the sandwiched monitor and glass. To calculate the
-        long sides of your dummy box, add in the thickness of the pieces of the
-        wood (in my case .75 inches per side). The end grains of the short
-        boards will butt against the face side of the long boards.
+        Carefully lay your stripped monitor, screen-side down, on top of the
+        glass. Take measurements of the stacked monitor and glass. My monitor
+        and glass stack was 15 9/16 inches long by 12 11/16 inches wide. To
+        calculate the short sides of your dummy box, add in the thickness of the
+        pieces of the wood (in my case .75 inches per side). The end grains of
+        the long boards will butt against the face side of the short boards. My
+        measurements for my two long boards were 15 9/16 inches, and my two
+        short boards were 14 3/16 inches.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -382,8 +419,8 @@ function Hardware() {
         width="500px"
       />
       <Typography variant="body1" color="text.primary">
-        Use the corner clamp to glue and dry overnight. I used four more .75inch
-        corner brackets to reinforce the box.
+        Use the corner clamp to glue and dry overnight. I used four more .75
+        inch corner brackets to reinforce the inner corners of the box.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -395,7 +432,7 @@ function Hardware() {
       <Typography variant="body1" color="text.primary">
         {" "}
         Ensure the monitor is correctly lined up against the glass, and
-        carefully place the dummy box over the monitor and glass sandwich. Using
+        carefully place the dummy box over the stacked monitor and glass. Using
         the four{" "}
         <Link
           color="secondary.main"
@@ -404,8 +441,10 @@ function Hardware() {
         >
           corner braces
         </Link>
-        , lay one in each corner flat against the back of the monitor. Mark the
-        holes for the screws with a pencil, and screw the braces in.
+        , lay one in each corner of the dummy box flat against the back of the
+        monitor. Mark the holes for the screws with a pencil, and screw the
+        braces in. Remove the dummy box from the rest of the frame and monitor.
+        Sand your dummy box and stain.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -415,11 +454,7 @@ function Hardware() {
         width="350px"
       />
       <Typography variant="body1" color="text.primary">
-        Remove the dummy box from the rest of the frame and monitor. Apply your
-        sanding and stain.
-      </Typography>
-      <Typography variant="body1" color="text.primary">
-        Once the box dries overnight, carefully replace the dummy box back on
+        After the box dries overnight, carefully replace the dummy box back on
         your frame. Take your time to ensure the dummy box fits snugly around
         the stacked monitor and glass, and the edges of the dummy box are lying
         flat against the frame back. Screw four{" "}
@@ -430,9 +465,10 @@ function Hardware() {
         >
           1.5 inch corner brackets
         </Link>{" "}
-        from the outer faces of the dummy box to the back of the frame. Notice,
-        I did not glue the box to the frame; If the monitor fails, you need to
-        be able to deconstruct the mirror housing to resolve.
+        from the outer faces of the dummy box to the back of the frame.
+        Important note: I did not glue the box to the frame; If the monitor
+        fails, you need to be able to deconstruct the mirror housing to
+        troubleshoot and potentially replace parts.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -442,11 +478,12 @@ function Hardware() {
         width="350px"
       />
       <Typography variant="body1" color="text.primary">
-        The last piece needed for the dummy box is the back plywood. Determine
-        the orientation of your mirror, and note which side is the top. To
-        determine the plywood width, measure from the outer face of your top
-        dummy box board to 1/3rd of the length of the dummy box. To determine
-        the length, measure from the outer width of your dummy box.
+        The last piece of wood is the back plywood board. Determine the
+        orientation of your mirror, and note which side is the top. To determine
+        the plywood width, measure from the outer faces of your top dummy box.
+        To determine the length, measure from the outer top face of your dummy
+        box to about 1/3rd of the length of the monitor. My back plate is 14
+        3/16 wide by 7 9/16 inches long.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -456,11 +493,17 @@ function Hardware() {
         width="500px"
       />
       <Typography variant="body1" color="text.primary">
-        Apply the sandpaper and staining (for the last time :D ). Once dry, use
-        a level and attach the “Picture Side” of your french cleat to the
-        plywood. Use three 1.5inch corner braces to attach the plywood to the
-        dummy box. Again, I recommend not to glue in case a monitor component
-        fails.
+        Apply the sandpaper and stain (for the last time 😆 ). Once dry, use a
+        level and attach the picture side of your{" "}
+        <Link
+          color="secondary.main"
+          target="_blank"
+          href="https://www.lowes.com/pd/Hillman-6-in-Hangman-Picture-Hanging-System/3058191"
+        >
+          french cleat
+        </Link>{" "}
+        to the plywood. Use three 1.5 inch corner braces to attach the plywood
+        to the dummy box.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -474,7 +517,8 @@ function Hardware() {
         Connect And Manage The Cables
       </Typography>
       <Typography variant="body1" color="text.primary">
-        The TFT monitor used only supports VGA, so wire your RaspberryPi to a{" "}
+        The old TFT monitor I repurposed only supported VGA. If you find
+        yourself in the same situation, plug a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -482,7 +526,7 @@ function Hardware() {
         >
           microHDMI to VGA adapter
         </Link>
-        , then connect the adapter to the{" "}
+        to your RaspberryPi, then connect the adapter to a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -490,7 +534,7 @@ function Hardware() {
         >
           VGA to VGA cable
         </Link>
-        , and finally into the monitor. Plug in the monitor’s{" "}
+        , and plug the VGA cable into your monitor. Plug in your monitor’s{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -526,9 +570,9 @@ function Hardware() {
         >
           clear velcro fasteners
         </Link>{" "}
-        to the back of the power box for the Raspberry Pi, Mirror. I then placed
-        another square of velcro on the back of the monitor. Velcro the squares
-        to secure.
+        to the back of the power box for the Raspberry Pi and monitor. I then
+        placed another square of velcro on the back of the monitor and velcroed
+        the squares to secure.
         <ImageModal
           margin="5px auto"
           altText="velcro squares"
@@ -561,12 +605,12 @@ function Hardware() {
         Hang, Test, and Enjoy!
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Select where to hang your mirror, and remember you will need to be near
-        a wall outlet. The French Cleat will support up to 75lbs in drywall,
-        with no stud needed! However, this cleat will not work in plaster. If
-        so, you need to find a stud and use a different hanging system. Lay the
-        “Wall Side” of the french cleat against the wall and use a pencil to
-        mark the screw holes. Drill pilot holes, and then screw in the cleat.
+        Select the best location to hang your mirror near a wall outlet. The
+        French cleat will support up to 75 lbs in drywall, with no stud needed!
+        However, this cleat will not work in plaster. If so, you need to find a
+        stud and use a different hanging system. Place the wall side of the
+        french cleat against the wall and use a pencil to mark the screw holes.
+        Drill pilot holes, and then screw in the cleat.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -586,7 +630,8 @@ function Hardware() {
         >
           SSH into your RaspberryPi
         </Link>{" "}
-        and type:<code>sudo shutdown now</code>
+        and type:
+        <Code text="sudo shutdown now" />
         Or you can create an{" "}
         <Link
           color="secondary.main"
@@ -600,8 +645,8 @@ function Hardware() {
       <Typography variant="body1" color="text.primary">
         Lastly, you can add the MMM-Remote-Controller to your Mirror. Access the
         remote via the IP address and port as specified in your config.js:
-        http://192.168.xxx.xxx:8080/remote.html. I created an iPhone home screen
-        shortcut from the web address!
+        <Code text="http://192.168.xxx.xxx:8080/remote.html" /> I created an
+        iPhone home screen shortcut from the web address!
       </Typography>
       <ImageModal
         margin="5px auto"

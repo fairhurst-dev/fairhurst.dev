@@ -9,9 +9,7 @@ function Software() {
     <Box>
       {" "}
       <Typography variant="body1" color="text.primary">
-        The magic mirror often serves as a “home assistant” or “command center”,
-        displaying relevant information like the time, weather, or to-dos. To
-        achieve this, we need a computer with internet access. Enter the{" "}
+        To power the Mirror’s widgets, you need a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -23,11 +21,10 @@ function Software() {
       </Typography>
       <br />
       <Typography variant="h5" color="text.primary">
-        Setup The RaspberryPi
+        Set up The RaspberryPi
       </Typography>
       <Typography variant="body1" color="text.primary">
-        The first step is to configure your RaspberryPi. I immediately threw my
-        brand new Pi into{" "}
+        Put your new Pi into{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -35,9 +32,11 @@ function Software() {
         >
           a case with passive cooling
         </Link>
-        . This case will protect my Pi from drops or spills during the
-        development process, and prevent it from baking in the mirror housing.
-        The extremely comprehensive{" "}
+        . This case will protect your Pi during the development process and
+        prevent it from baking in the Magic Mirror housing.
+      </Typography>
+      <Typography variant="body1" color="text.primary">
+        Follow the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -45,8 +44,7 @@ function Software() {
         >
           Official Raspberry Pi Documentation
         </Link>{" "}
-        walked me through the initial boot step by step. As recommended, I used
-        the{" "}
+        instructions to boot the RaspberryPi for the first time. I used the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -62,8 +60,8 @@ function Software() {
         >
           microSD card
         </Link>
-        . I inserted the microSD and connected a keyboard and mouse to the USB.
-        I learned to connect my Pi to a monitor using a{" "}
+        . Insert the microSD and connect a keyboard and mouse to the Pi. I
+        learned to connect my Pi to a monitor, using a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -72,25 +70,25 @@ function Software() {
           micro HDMI cable
         </Link>
         , before connecting the Pi to power (sometimes the Pi can struggle to
-        recognize externals plugged in after power is supplied). Once the
-        Raspberry Pi is plugged in, it should automatically boot. I followed the
-        RaspberryPi OS setup prompts, including connecting to my wifi network. I
-        even elected to rotate the RaspberryPi from{" "}
+        recognize externals plugged in after power is supplied). Once your
+        Raspberry Pi is plugged in, it should automatically boot from the
+        microSD card. Follow the RaspberryPi OS setup prompts, including
+        connecting to your wifi network. You can choose to rotate the{" "}
         <Link
           color="secondary.main"
           target="_blank"
           href="https://pimylifeup.com/raspberry-pi-rotate-screen/"
         >
-          landscape to portrait mode
+          RaspberryPi from landscape to portrait mode
         </Link>{" "}
-        to give it a more mirror-y feel.
+        to emulate the typical orientation of a real mirror.
       </Typography>
       <br />
       <Typography variant="h5" color="text.primary">
         Setup The Development Environment
       </Typography>
       <Typography variant="body1" color="text.primary">
-        The platform I chose for the mirror is called{" "}
+        The most popular platform to display the Magic Mirror widgets is{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -98,7 +96,7 @@ function Software() {
         >
           MagicMirror^2
         </Link>
-        . It’s open source, has tons of 3rd-party modules, and even has a{" "}
+        . It is open source, has tons of 3rd-party modules, and even has a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -114,8 +112,8 @@ function Software() {
         >
           Electron
         </Link>{" "}
-        app, which is a framework to build desktop applications using
-        JavaScript, HTML, and CSS. I would recommend you have a basic
+        app, a framework to build desktop applications using JavaScript, HTML,
+        and CSS. As a Node.js developer, it was so helpful to have an
         understanding of Electron, as well as{" "}
         <Link
           color="secondary.main"
@@ -124,7 +122,7 @@ function Software() {
         >
           Node.js
         </Link>
-        (JavaScript runtime environment) and{" "}
+        (JavaScript runtime environment), and{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -134,12 +132,10 @@ function Software() {
         </Link>
       </Typography>
       <Typography variant="body1" color="text.primary">
-        As a web developer, I use Github for version control every day. Version
-        control allows developers to track the who, when, and what of changes
-        made to code. A remote repository hosted on Github serves as a backup
-        for your code. You can also pull your code down and edit it from any
-        computer! If you aren’t familiar with version control, follow the steps
-        to set up your{" "}
+        Before you start customizing your MagicMirror2 app, consider using
+        version control. As a developer, I use Git and Github everyday to track
+        and manage code changes working in a fully remote team. If you aren’t
+        familiar with version control, follow the steps to set up your{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -147,7 +143,8 @@ function Software() {
         >
           Git account on the RaspberryPi
         </Link>
-        . You can read more about Github and Git via the{" "}
+        A Github repository serves as a backup for your code. You can read more
+        about Github and Git via the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -158,10 +155,9 @@ function Software() {
         .
       </Typography>
       <Typography variant="body1" color="text.primary">
-        It was time to install MagicMirror^2 platform. As listed in the
-        MagicMirror^2 docs, there are various installation methods including an
-        automatic installer script, Docker image, and even a MagicMirrorOS!
-        However, I chose the{" "}
+        MagicMirror2 docs contain multiple installation methods including an
+        automatic installer script, Docker image, and even a MagicMirrorOS! I
+        chose the lighter{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -169,9 +165,9 @@ function Software() {
         >
           manual installation
         </Link>{" "}
-        as I think it’s the easiest and lightest. I made a slight change when I
-        cloned my repo. Instead of cloning from ​​/MichMich/MagicMirror, I went
-        to my github account and forked the{" "}
+        , but I made a slight change when I cloned my repo: instead of cloning
+        from ​​/MichMich/MagicMirror, I started from my Github account and
+        forked the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -184,14 +180,13 @@ function Software() {
         Additionally, I added the official MagicMirror repo as an upstream
         remote repo.
         <Code text="git remote add upstream https://github.com/MichMich/MagicMirror.git" />
-        This allows you to easily fetch and merge changes that are made to the
-        upstream repo to keep your MagicMirror platform up to date with the
-        latest releases!
+        This upstream remote allows you to easily fetch and merge the latest
+        MagicMirror2 code.
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Because you will be editing the files of the MagicMirror^2 repo, you’ll
-        want an IDE, or integrated development environment. An IDE is software
-        to help you write, debug, and run code. My first choice is{" "}
+        To edit the files of your MagicMirror2 repo, use an IDE, or integrated
+        development environment. An IDE is software to help you write, debug,
+        and run code. My first choice for Javascript code is{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -199,10 +194,10 @@ function Software() {
         >
           Visual Studio Code
         </Link>
-        . Choose the Linux x64 .deb stable build for download. (RaspberryPi OS
+        . Download the Linux x64 .deb stable build to your Pi. (RaspberryPi OS
         is based on Debian OS, which is a distro of the Linux OS, hence the .deb
         file ending). VSCode has a lot of 3rd-party extensions to super-charge
-        your development process. I immediately added{" "}
+        your development process. I added{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -210,10 +205,19 @@ function Software() {
         >
           Prettier
         </Link>
-        , a code formatter, that will prevent syntax errors in your config.js
-        file. Click View → Command Palette → Type “Preferences: Open Settings
-        (JSON)” and paste this at the bottom of your settings.json and save the
-        file. Next, follow the MagicMirror^2 configuration options, which shows
+        , a code formatter, that will help you spot syntax errors in your
+        config.js file. To add Prettier click View → Command Palette → Type
+        “Preferences: Open Settings (JSON)” and paste this at the bottom of your
+        settings.json and save the file:
+      </Typography>
+      <ImageModal
+        altText="prettier settings"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/prettier_settings.png"
+        height="500px"
+        width="500px"
+      />
+      <Typography variant="body1" color="text.primary">
+        Continue to follow the MagicMirror2 configuration options, which shows
         you how to install a{" "}
         <Link
           color="secondary.main"
@@ -230,13 +234,13 @@ function Software() {
         Customize The Modules
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Before you start developing, you’ll probably want to kill the
-        MagicMirror^2 process: <code>pm2 stop mm</code> Now for the fun part:
-        configure the mirror modules! Each “widget” on the screen of the Mirror
-        (called modules) can be added, customized, or removed, such as the
-        clock, calendar, and compliments modules. There are default modules that
-        come installed with the official MagicMirror^2 platform, but there are
-        tons of{" "}
+        Before you start developing, kill the MagicMirror2 process:
+      </Typography>
+      <Code text="pm2 stop mm" />
+      <Typography variant="body1" color="text.primary">
+        Now for the fun part: configure the mirror modules! The default widgets
+        on the screen of the Magic Mirror (called modules) include a clock,
+        weather, and compliments.There are also a host of{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -244,36 +248,32 @@ function Software() {
         >
           3rd party modules
         </Link>
-        available. Each module (should)include some documentation on how to
-        install it, but most will consist of cloning the modules and{" "}
+        available. Most modules will consist of cloning the module’s repo and{" "}
         <Code text="npm install" />
-        inside this new module directory. Other modules will require you to
+        inside the new module directory. Other modules will require you to
         create a developer account with a service and obtain an API key to fetch
-        data.
+        data. Check the documentation for each 3rd party module.
       </Typography>
       <Typography variant="body1" color="text.primary">
-        The easiest way to view the changes you make to your MagicMirror^2 is to
-        open a browser tab and navigate to the address that the mirror app is
-        being served to. (The electron window is great for displaying, but not
-        for developing as the entire app has to be killed and relaunched to see
-        changes). The default address, found in the config.js is localhost:8080.
-        Save your changes and refresh your browser to see your changes
-        reflected! If you’re not seeing your changes, or seeing a config error,
-        run:{" "}
-        <Code text="git remote add upstream https://github.com/MichMich/MagicMirror.git" />
-        The most common error is a syntax error (did you forget a curly brace )?
-        Formatting with Prettier can help to avoid these mistakes.
+        View the changes to your MagicMirror2 during development by opening a
+        browser tab and navigating to the
+        <Code text="address:port" />
+        value in the config.js (the default is
+        <Code text="localhost:8080" />
+        ). After you make a change, save your files and refresh this browser
+        tab. The default Electron window should be used for displaying the
+        mirror (or your production environment 😁), but not for development as
+        the entire platform has to be killed and relaunched to reflect changes.
+        If you’re not seeing your changes or you are seeing a config error, run:
+        <Code text="npm run config:check" />
+        The most common error is a syntax error (did you forget a closing
+        bracket )? Formatting with Prettier can help you avoid these mistakes.
       </Typography>
       <Typography variant="body1" color="text.primary">
         Once you’re happy with your initial configuration and modules, push to
-        your github repo:{" "}
-        <Code
-          text=" git add .<br />
-          git commit -m “added first module”
-          <br />
-          git push"
-        />
-        For the adventurous, you can even{" "}
+        your Github repo: <Code text=" git add ." />
+        <Code text="git commit -m “added first module”" />
+        <Code text="git push" /> For the adventurous, you can even{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -296,6 +296,12 @@ function Software() {
         Let’s walk through an example of changing the color of the date. From
         the MagicMirror running in your browser, right click <i>inspect</i>. You
         should see a small icon depicting a mouse over a rectangle. Click it.
+        <ImageModal
+          altText="browser inspector"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/inspector.png"
+          height="400px"
+          width="400px"
+        />
         Now try hovering over the date in the UI. The inspector tool tells us
         the CSS class name for the date element is{" "}
         <Code text="date.normal.medium" />
@@ -310,12 +316,16 @@ function Software() {
       <Typography variant="body1" color="text.primary">
         Inside your MagicMirror repo, navigate to the css folder and create a
         file custom.css. Write a new rule set targeting the class of your date
-        element.{" "}
-        <Code
-          text={`.date.normal.medium{
-                color: green 
-                }`}
-        />
+        element:
+      </Typography>
+      <ImageModal
+        margin="5px auto"
+        altText="css class"
+        imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/css_class_date.png"
+        height="300px"
+        width="400px"
+      />
+      <Typography variant="body1" color="text.primary">
         Save, refresh, and check back!{" "}
       </Typography>
       <ImageModal
@@ -326,9 +336,8 @@ function Software() {
         width="400px"
       />
       <Typography variant="body1" color="text.primary">
-        You can do this for any element of the MagicMirror, and change many
-        properties including font size, style, size, shadows, animations and
-        more.
+        You can do this for any element of the MagicMirror, using any valid CSS
+        properties.
       </Typography>
     </Box>
   );
