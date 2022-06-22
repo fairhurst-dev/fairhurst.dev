@@ -15,13 +15,13 @@ function Software() {
           target="_blank"
           href="https://www.bestbuy.com/site/canakit-raspberry-pi-4-basic-kit/6405651.p?skuId=6405651&ref=17&loc=11&CampaignID=1161323&SubscriberID=569113989"
         >
-          RaspberryPi
+          Raspberry Pi
         </Link>
-        , a credit card sized fully functioning and wifi ready computer.
+        , a credit card-sized fully functioning and WiFi ready computer.
       </Typography>
       <br />
       <Typography variant="h5" color="text.primary">
-        Set up The RaspberryPi
+        Set up The Raspberry Pi
       </Typography>
       <Typography variant="body1" color="text.primary">
         Put your new Pi into{" "}
@@ -33,7 +33,7 @@ function Software() {
           a case with passive cooling
         </Link>
         . This case will protect your Pi during the development process and
-        prevent it from baking in the Magic Mirror housing.
+        prevent it from overheating in the Magic Mirror housing.
       </Typography>
       <Typography variant="body1" color="text.primary">
         Follow the{" "}
@@ -44,7 +44,7 @@ function Software() {
         >
           Official Raspberry Pi Documentation
         </Link>{" "}
-        to boot the RaspberryPi for the first time. I used the{" "}
+        to boot the Raspberry Pi for the first time. I used the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -52,7 +52,7 @@ function Software() {
         >
           Raspberry Pi Imager
         </Link>{" "}
-        to flash the RaspberryPi OS onto a{" "}
+        to flash the Raspberry Pi OS onto a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -71,21 +71,21 @@ function Software() {
         </Link>
         , before connecting the Pi to power (sometimes the Pi can struggle to
         recognize externals plugged in after power is supplied). Once your
-        RaspberryPi is plugged in, it should automatically boot from the microSD
-        card. Follow the RaspberryPi OS setup prompts, including connecting to
-        your wifi network. You can choose to rotate the{" "}
+        Raspberry Pi is plugged in, it should automatically boot from the
+        microSD card. Follow the Raspberry Pi OS setup prompts, including
+        connecting to your wifi network. You can rotate the{" "}
         <Link
           color="secondary.main"
           target="_blank"
           href="https://pimylifeup.com/raspberry-pi-rotate-screen/"
         >
-          RaspberryPi from landscape to portrait mode
+          Raspberry Pi from landscape to portrait mode
         </Link>{" "}
         to emulate the typical orientation of a real mirror.
       </Typography>
       <br />
       <Typography variant="h5" color="text.primary">
-        Setup The Development Environment
+        Set Up The Development Environment
       </Typography>
       <Typography variant="body1" color="text.primary">
         The most popular platform to display the Magic Mirror widgets is{" "}
@@ -133,7 +133,7 @@ function Software() {
       </Typography>
       <Typography variant="body1" color="text.primary">
         Before you start customizing your MagicMirror<sup>2</sup> app, consider
-        using version control. As a developer, I use Git and Github everyday to
+        using version control. As a developer, I use Git and GitHub everyday to
         track and manage code changes working in a fully remote team. If you
         aren’t familiar with version control, follow the steps to set up your{" "}
         <Link
@@ -141,16 +141,16 @@ function Software() {
           target="_blank"
           href="https://projects.raspberrypi.org/en/projects/getting-started-with-git/0"
         >
-          Git account on the RaspberryPi
+          Git account on the Raspberry Pi
         </Link>
-        . A Github repository serves as a backup for your code. You can read
-        more about Github and Git via the{" "}
+        . A GitHub repository serves as a backup for your code. You can read
+        more about GitHub and Git via the{" "}
         <Link
           color="secondary.main"
           target="_blank"
           href="https://docs.github.com/en/get-started"
         >
-          Github docs
+          GitHub docs
         </Link>
         .
       </Typography>
@@ -166,19 +166,19 @@ function Software() {
           manual installation
         </Link>{" "}
         , but I made a slight change when I cloned my repo: instead of cloning
-        from ​​/MichMich/MagicMirror, I started from my Github account and
+        from ​​/MichMich/MagicMirror, I started from my GitHub account and
         forked the{" "}
         <Link
           color="secondary.main"
           target="_blank"
           href="https://github.com/MichMich/MagicMirror"
         >
-          MagicMirror repo
+          MagicMirror<sup>2</sup> repo
         </Link>
         , and then cloned the repo from my own fork.{" "}
         <Code text="git clone https://github.com/Your-Username/MagicMirror.git" />
-        Additionally, I added the official MagicMirror repo as an upstream
-        remote repo:
+        Additionally, I added the official MagicMirror<sup>2</sup> repo as an
+        upstream remote repo:
         <Code text="git remote add upstream https://github.com/MichMich/MagicMirror.git" />
         This upstream remote allows you to easily fetch and merge the latest
         MagicMirror<sup>2</sup> code.
@@ -194,7 +194,7 @@ function Software() {
         >
           Visual Studio Code
         </Link>
-        . Download the Linux x64 .deb stable build to your Pi. (RaspberryPi OS
+        . Download the Linux x64 .deb stable build to your Pi. (Raspberry Pi OS
         is based on Debian OS, which is a distro of Linux, hence the .deb file
         ending). VSCode has a lot of 3rd-party extensions to supercharge your
         development process. I added{" "}
@@ -227,7 +227,7 @@ function Software() {
         >
           process manager, pm2
         </Link>
-        , that autostarts the mirror application as soon as the RaspberryPi
+        , that autostarts the mirror application as soon as the Raspberry Pi
         boots.
       </Typography>
       <br />
@@ -272,7 +272,7 @@ function Software() {
       </Typography>
       <Typography variant="body1" color="text.primary">
         Once you’re happy with your initial configuration and modules, push to
-        your Github repo: <Code text=" git add ." />
+        your GitHub repo: <Code text=" git add ." />
         <Code text="git commit -m “added first module”" />
         <Code text="git push" /> For the adventurous, you can even{" "}
         <Link
@@ -282,8 +282,9 @@ function Software() {
         >
           customize the CSS{" "}
         </Link>
-        of the modules on the MagicMirror. There’s not much information in the
-        MagicMirror<sup>2</sup> docs about CSS, but the forums have a{" "}
+        of the modules on the MagicMirror<sup>2</sup>. There’s not much
+        information in the MagicMirror<sup>2</sup> docs about CSS, but the
+        forums have a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -339,8 +340,8 @@ function Software() {
         width="400px"
       />
       <Typography variant="body1" color="text.primary">
-        You can do this for any element of the MagicMirror, using any valid CSS
-        properties.
+        You can do this for any element of the MagicMirror<sup>2</sup>, using
+        any valid CSS properties.
       </Typography>
     </Box>
   );

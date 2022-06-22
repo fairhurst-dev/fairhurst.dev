@@ -19,7 +19,7 @@ const cardData = [
     link: "/portfolio/mirror",
   },
   {
-    title: "Github",
+    title: "GitHub",
     description: ["Check out my repos"],
     icon: <GitHub sx={cardStyle} />,
     link: "https://github.com/fairhurst-dev/",
