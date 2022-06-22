@@ -3,7 +3,7 @@ const suppliesList = {
     { text: "19'' TFT LCD color monitor model number VT-968V", link: "" },
     {
       text: "CanaKit - Raspberry Pi 4 4GB Basic Kit",
-      url: "https://www.amazon.com/gp/product/B07TTKD38N/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1",
+      url: "https://www.bestbuy.com/site/canakit-raspberry-pi-4-basic-kit/6405651.p?skuId=6405651&ref=17&loc=11&CampaignID=1161323&SubscriberID=569113989",
     },
     {
       text: "CanaKit Raspberry Pi 4 Micro HDMI Cable - 6 Feet (Pack of 2)",
@@ -31,7 +31,7 @@ const suppliesList = {
     },
     {
       text: "24V DC Power Supply 1.5A AC Adapter",
-      url: "https://www.amazon.com/gp/product/B07TTKD38N/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1",
+      url: "https://www.amazon.com/gp/product/B08F7DVY8G/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1",
     },
     {
       text: "Blank USB",
@@ -41,7 +41,7 @@ const suppliesList = {
   "Build the mirror housing": [
     { text: `One-Way Mirror - 1/4" Cut to Size - (13" x 16")`, link: "" },
     {
-      text: "2 X ReliaBilt 1-in x 3-in x 6-ft Square Unfinished Pine Board",
+      text: "2 x ReliaBilt 1-in x 3-in x 6-ft Square Unfinished Pine Board",
       url: "https://www.lowes.com/pd/Common-1-in-x-3-in-x-6-ft-Actual-0-75-in-x-2-5-in-x-6-ft-Pine-Board/1000070127",
     },
     {
@@ -53,7 +53,7 @@ const suppliesList = {
       url: "https://www.amazon.com/3M-25150P-G-Advanced-Sandpaper-11-Inches/dp/B00KW3WN8W/ref=sr_1_2?crid=RIGQDKI0IBQ4&keywords=p150+sandpaper&qid=1649791636&sprefix=p150+sandpaper%2Caps%2C242&sr=8-2",
     },
     {
-      text: "Gorilla Wood Glue Wood Adhesive",
+      text: "Gorilla Wood Glue",
       url: "https://www.lowes.com/pd/Gorilla-Wood-Glue-Off-White-Interior-Exterior-Wood-Adhesive-Actual-Net-Contents-8-fl-oz/5002457557",
     },
     {
@@ -61,11 +61,11 @@ const suppliesList = {
       url: "https://www.lowes.com/pd/Pony-1-1-8-in-Corner-Clamp/1000989056",
     },
     {
-      text: "2 X ReliaBilt 0.75-in x 0.5-in x 0.75-in Zinc-plated Steel Corner Brace (4-Pack)",
+      text: "2 x ReliaBilt 0.75-in x 0.5-in x 0.75-in Zinc-plated Steel Corner Brace (4-Pack)",
       url: "https://www.lowes.com/pd/ReliaBilt-RB-3-4-IN-ZN-CORNER-BRACE-4-CT/5001637033",
     },
     {
-      text: "2 X National Hardware 1.5-in x 0.625-in x 1.5-in Zinc-plated Steel Corner Brace (4-Pack)",
+      text: "2 x National Hardware 1.5-in x 0.625-in x 1.5-in Zinc-plated Steel Corner Brace (4-Pack)",
       url: "https://www.lowes.com/pd/National-Hardware-1-1-2-in-Steel-Zinc-Plated-Corner-Brace/1000201729",
     },
     {
@@ -85,11 +85,11 @@ const suppliesList = {
       url: "",
     },
     {
-      text: "Phillips Head screwdriver",
+      text: "Phillips screwdriver",
       url: "",
     },
     {
-      text: "Medium Paintbrush",
+      text: "Medium paintbrush",
       url: "",
     },
   ],
@@ -99,7 +99,7 @@ const suppliesList = {
       url: "https://www.amazon.com/gp/product/B0154MS9Q0/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1",
     },
     {
-      text: "OHill Cable Clips,16 Pack Black Adhesive Cord Holders",
+      text: "OHill Cable Clips 16 Pack",
       url: "https://www.amazon.com/gp/product/B071FXZBMV/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1",
     },
     {
@@ -107,11 +107,11 @@ const suppliesList = {
       url: "https://www.lowes.com/pd/Scotch-12-Pack-1-in-Clear-Fastener/999989986",
     },
     {
-      text: "Duct Tape",
+      text: "Duct tape",
       url: "",
     },
     {
-      text: "Electrical Tape",
+      text: "Electrical tape",
       url: "",
     },
     {

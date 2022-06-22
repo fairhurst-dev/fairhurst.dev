@@ -15,17 +15,10 @@ function Hardware() {
   return (
     <Box>
       <Typography variant="body1" color="text.primary">
-        My job as a software developer leveraging{" "}
-        <Link
-          color="secondary.main"
-          target="_blank"
-          href="https://developer.mozilla.org/en-US/docs/Web"
-        >
-          web technologies
-        </Link>{" "}
-        and version control prepared me for the software implementation of the
-        mirror. But the hardware proved much more challenging for me; I had
-        never built anything using wood before.
+        My job as a software developer leveraging web technologies and version
+        control prepared me for the software implementation of the mirror. But
+        the hardware proved much more challenging for me; I had never built
+        anything using wood before.
       </Typography>
       <Typography variant="body1" color="text.primary">
         My criteria for successful mirror housing was:{" "}
@@ -75,36 +68,37 @@ function Hardware() {
       </Typography>
       <List sx={{ ml: 3 }}>
         <ListItem>
-          <Link
-            color="#fff"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/watch?v=OYlloiaBINo&t=343s&ab_channel=BreakItYourself"
-          >
-            DIY Smart Mirror - Full Tutorial
-          </Link>
+          <Typography variant="body1" color="text.primary">
+            <Link
+              color="secondary.main"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=OYlloiaBINo"
+            >
+              DIY Smart Mirror - Full Tutorial
+            </Link>
+          </Typography>
         </ListItem>{" "}
         <ListItem>
-          {" "}
-          <Link
-            color="#fff"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/watch?v=fkVBAcvbrjU&t=25s&ab_channel=HackerShack"
-          >
-            How to Make a Raspberry Pi Smart Mirror
-          </Link>
+          <Typography variant="body1" color="text.primary">
+            <Link
+              color="secondary.main"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=fkVBAcvbrjU"
+            >
+              How to Make a Raspberry Pi Smart Mirror
+            </Link>
+          </Typography>{" "}
         </ListItem>{" "}
         <ListItem>
-          {" "}
-          <Link
-            color="#fff"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="http://blog.dylanjpierce.com/raspberrypi/magicmirror/tutorial/2015/12/27/build-a-magic-mirror.html"
-          >
-            Building MirrorMirror – /home/pierce
-          </Link>
+          <Typography variant="body1" color="text.primary">
+            <Link
+              color="secondary.main"
+              target="_blank"
+              href="http://blog.dylanjpierce.com/raspberrypi/magicmirror/tutorial/2015/12/27/build-a-magic-mirror.html"
+            >
+              Building MirrorMirror – /home/pierce
+            </Link>
+          </Typography>{" "}
         </ListItem>
       </List>
       <Typography variant="body1" color="text.primary">
@@ -137,7 +131,16 @@ function Hardware() {
         >
           Creo Parametric.
         </Link>{" "}
-        You can download all the 3D files for my mirror housing here.
+        <br />
+        <Link
+          href="/assets/magic_mirror_modeling.zip"
+          color="secondary.main"
+          target="_self"
+          download
+        >
+          {" "}
+          Click to download all the 3D files for my mirror housing
+        </Link>
       </Typography>
       <br />
       <Typography variant="h5" color="text.primary">
@@ -172,14 +175,14 @@ function Hardware() {
       <Typography variant="body1" color="text.primary">
         Strip your monitor of its plastic casing and bezel. This will help to
         satisfy design constraint 1: minimizing light spilling into the housing.
-        Less light spilling equals brighter and clearer MagicMirror2 modules.
-        Stripping the casing will vary by monitor; I had to remove tiny screws
-        to allow myself to pry the plastic case open. I also removed the metal
-        bezel around the front of the monitor using my fingers and a flathead
-        screwdriver. There was more metal casing around the back of the monitor
-        that potentially could have been removed, but I left it intact to
-        protect the monitor’s electronic components. Take measurements of your
-        new naked monitor.
+        Less light spilling equals brighter and clearer MagicMirror<sup>2</sup>{" "}
+        modules. Stripping the casing will vary by monitor; I had to remove tiny
+        screws to allow myself to pry the plastic case open. I also removed the
+        metal bezel around the front of the monitor using my fingers and a
+        flathead screwdriver. There was more metal casing around the back of the
+        monitor that potentially could have been removed, but I left it intact
+        to protect the monitor’s electronic components. Take measurements of
+        your new naked monitor.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -194,16 +197,16 @@ function Hardware() {
         <Link
           color="secondary.main"
           target="_blank"
-          href="https://developer.mozilla.org/en-US/docs/Web"
+          href="https://www.aisglass.com/all-you-need-to-know-about-one-way-glass/"
         >
           two-way mirror glass
         </Link>
         ). This special glass reflects light from one side, and allows light to
         shine through the other. The mirror side of the glass faces outward,
         while the opposite side lies flat against your monitor, allowing the
-        modules from your MagicMirror2 platform to shine through! Look for glass
-        no more than ¼ inch thick to maximize the brightness and clarity of the
-        modules.
+        modules from your MagicMirror<sup>2</sup> platform to shine through!
+        Look for glass no more than 1/4 inch thick to maximize the brightness
+        and clarity of the modules.
       </Typography>{" "}
       <ImageModal
         margin="5px auto"
@@ -238,7 +241,7 @@ function Hardware() {
         width="700px"
       />
       <Typography variant="body1" color="text.primary">
-        Still can’t find a reasonable price? Some makers used{" "}
+        Still can not find a reasonable price? Some makers used{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -246,9 +249,8 @@ function Hardware() {
         >
           acrylic sheets or reflective film over a mirror
         </Link>
-        over a mirror. However, I did not want to experience any distortion
-        while looking at my reflection in the mirror, so glass was the obvious
-        choice.
+        . However, I did not want to experience any distortion while looking at
+        my reflection in the mirror, so glass was the obvious choice.
       </Typography>
       <Typography variant="body1" color="text.primary">
         Now for the wood. If you are a first-time woodworker like me, choose
@@ -258,7 +260,7 @@ function Hardware() {
           target="_blank"
           href="https://www.lowes.com/pd/Common-1-in-x-3-in-x-6-ft-Actual-0-75-in-x-2-5-in-x-6-ft-Pine-Board/1000070127"
         >
-          2 3x6s
+          two 3 x 6s
         </Link>{" "}
         and a{" "}
         <Link
@@ -266,7 +268,7 @@ function Hardware() {
           target="_blank"
           href="https://www.lowes.com/pd/15-32-in-Common-Pine-Sanded-Plywood-Application-as-2-x-2/3043814"
         >
-          2x2ft piece of plywood
+          2 x 2ft piece of plywood
         </Link>
         .
       </Typography>
@@ -292,13 +294,12 @@ function Hardware() {
         >
           silicone glue
         </Link>
-        . My glass measured 12 11/16 inches by 15 ½ inches. For the shorter
-        boards of the frame, I subtracted ½ inch from each side, giving me 12
-        3/16 inches x 15 inches. Before you cut the longer pieces of wood,
-        remember to add in the width of the wood (in my case 2.5 inches per
-        side). The end grain of the shorter boards will butt against the longer
-        boards’ edges at a 90-degree angle. My final dimensions were 12 3/16
-        inches x 20 inches.
+        . My glass measured 12 11/16 x 15 1/2 inches. For the shorter boards of
+        the frame, I subtracted 1/2 inch from each side, giving me 12 3/16 x 15
+        inches. Before you cut the longer pieces of wood, remember to add in the
+        width of the wood (in my case 2.5 inches per side). The end grain of the
+        shorter boards will butt against the longer boards’ edges at a 90-degree
+        angle. My final dimensions were 12 3/16 x 20 inches.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -383,7 +384,7 @@ function Hardware() {
         width="400px"
       />
       <Typography variant="body1" color="text.primary">
-        Placing the stained side of the frame down, spread a line of silicone
+        Place the stained side of the frame down and spread a line of silicone
         along the lip of the frame opening. Use a plastic knife or spoon to
         evenly spread the silicone on the frame. Carefully attach the one-way
         glass to the back of the frame, and remember to place the mirror side
@@ -404,12 +405,12 @@ function Hardware() {
       <Typography variant="body1" color="text.primary">
         Carefully lay your stripped monitor, screen-side down, on top of the
         glass. Take measurements of the stacked monitor and glass. My monitor
-        and glass stack was 15 9/16 inches long by 12 11/16 inches wide. To
-        calculate the short sides of your dummy box, add in the thickness of the
-        pieces of the wood (in my case .75 inches per side). The end grains of
-        the long boards will butt against the face side of the short boards. My
-        measurements for my two long boards were 15 9/16 inches, and my two
-        short boards were 14 3/16 inches.
+        and glass stack was 15 9/16 x 12 11/16 inches. To calculate the short
+        sides of your dummy box, add in the thickness of the pieces of the wood
+        (in my case .75 inches per side). The end grains of the long boards will
+        butt against the face side of the short boards. My measurements for my
+        two long boards were 15 9/16 inches, and my two short boards were 14
+        3/16 inches.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -482,8 +483,8 @@ function Hardware() {
         orientation of your mirror, and note which side is the top. To determine
         the plywood width, measure from the outer faces of your top dummy box.
         To determine the length, measure from the outer top face of your dummy
-        box to about 1/3rd of the length of the monitor. My back plate is 14
-        3/16 wide by 7 9/16 inches long.
+        box to about 1/3rd of the length of the monitor. My back plate measured
+        14 3/16 x 7 9/16 inches.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -502,8 +503,8 @@ function Hardware() {
         >
           french cleat
         </Link>{" "}
-        to the plywood. Use three 1.5 inch corner braces to attach the plywood
-        to the dummy box.
+        to the plywood. Use four 1.5 inch corner braces to attach the plywood to
+        the dummy box.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -542,7 +543,7 @@ function Hardware() {
         >
           power chord
         </Link>{" "}
-        to the{" "}
+        and the RaspberryPi power to the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -561,8 +562,8 @@ function Hardware() {
         >
           cable ties
         </Link>{" "}
-        to separate the cords for the monitor power, RaspberryPi power, and
-        monitor VGA cables. I attached squares of{" "}
+        to separate the cords for the monitor power, RaspberryPi power, and VGA
+        cables. I attached squares of{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -606,11 +607,11 @@ function Hardware() {
       </Typography>
       <Typography variant="body1" color="text.primary">
         Select the best location to hang your mirror near a wall outlet. The
-        French cleat will support up to 75 lbs in drywall, with no stud needed!
-        However, this cleat will not work in plaster. If so, you need to find a
-        stud and use a different hanging system. Place the wall side of the
-        french cleat against the wall and use a pencil to mark the screw holes.
-        Drill pilot holes, and then screw in the cleat.
+        French cleat will support up to 75 pounds in drywall, with no stud
+        needed! However, this cleat will not work in plaster. If so, you need to
+        find a stud and use a different hanging system. Place the wall side of
+        the French cleat against the wall and use a pencil to mark the screw
+        holes. Drill pilot holes, and then screw in the cleat.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -621,8 +622,9 @@ function Hardware() {
       />
       <Typography variant="body1" color="text.primary">
         Hang, and plug the A/C splitter into the wall outlet. The RaspberryPi
-        should boot automatically, and then the MagicMirror^2 platform should be
-        launched! To turn the mirror off, you can{" "}
+        should boot automatically, and pm2 should handling starting the
+        MagicMirror<sup>2</sup> platform on launch! To turn the mirror off, you
+        can{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -643,10 +645,25 @@ function Hardware() {
         .
       </Typography>
       <Typography variant="body1" color="text.primary">
-        Lastly, you can add the MMM-Remote-Controller to your Mirror. Access the
-        remote via the IP address and port as specified in your config.js:
-        <Code text="http://192.168.xxx.xxx:8080/remote.html" /> I created an
-        iPhone home screen shortcut from the web address!
+        Lastly, you can add the{" "}
+        <Link
+          color="secondary.main"
+          target="_blank"
+          href="https://github.com/Jopyth/MMM-Remote-Control"
+        >
+          MMM-Remote-Control{" "}
+        </Link>
+        to your Mirror. Access the remote via the IP address and port as
+        specified in your config.js:
+        <Code text="http://192.168.xxx.xxx:8080/remote.html" /> I created an{" "}
+        <Link
+          color="secondary.main"
+          target="_blank"
+          href="https://www.howtogeek.com/667910/how-to-add-a-website-to-your-iphone-or-ipad-home-screen/"
+        >
+          iPhone home screen shortcut{" "}
+        </Link>{" "}
+        from the web address!
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -658,13 +675,6 @@ function Hardware() {
       <Typography variant="body1" color="text.primary">
         Enjoy!
       </Typography>
-      <Link
-        color="secondary.main"
-        target="_blank"
-        href="github.com/fairhurst-dev/MagicMirror"
-      >
-        github.com/fairhurst-dev/MagicMirror
-      </Link>{" "}
     </Box>
   );
 }
