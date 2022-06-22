@@ -10,9 +10,9 @@ const cardData = [
     icon: (
       <Box marginBottom="5px" maxHeight="200px" maxWidth="200px">
         <img
-          alt="exploded view"
+          alt="magic mirror"
           width="100%"
-          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/exploded_view_2.png"
+          src="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_cropped.png"
         />
       </Box>
     ),

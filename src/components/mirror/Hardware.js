@@ -675,6 +675,38 @@ function Hardware() {
       <Typography variant="body1" color="text.primary">
         Enjoy!
       </Typography>
+      <Grid container>
+        <ImageModal
+          margin="5px auto"
+          altText="Magic mirror"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+          height="500px"
+          width="300px"
+        />
+        <ImageModal
+          margin="5px auto"
+          altText="magic mirror ui detail"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_detail_1.png"
+          height="500px"
+          width="300px"
+        />
+      </Grid>
+      <Grid container>
+        <ImageModal
+          margin="5px auto"
+          altText="magic mirror ui"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_ui.png"
+          height="500px"
+          width="300px"
+        />
+        <ImageModal
+          margin="5px auto"
+          altText="magic mirror ui detail"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_detail_2.png"
+          height="500px"
+          width="300px"
+        />
+      </Grid>
     </Box>
   );
 }

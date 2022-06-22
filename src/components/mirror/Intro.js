@@ -36,10 +36,10 @@ function Intro() {
         alignItems="center"
       >
         <ImageModal
-          altText="magic mirror UI"
-          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_ui.png"
-          height="250px"
-          width="250px"
+          altText="magic mirror final"
+          imgURL="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+          height="500px"
+          width="300px"
         />
       </Grid>
     </Grid>
