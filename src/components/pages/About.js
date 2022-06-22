@@ -61,7 +61,12 @@ function About() {
             }}
             elevation={10}
           >
-            <Typography variant="h6" align="center" color="text.primary">
+            <Typography
+              as="body1"
+              variant="h6"
+              align="center"
+              color="text.primary"
+            >
               {textTop}
 
               <Fade in timeout={2500}>
