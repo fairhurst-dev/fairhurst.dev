@@ -41,11 +41,11 @@ const suppliesList = {
   "Build the mirror housing": [
     { text: `One-Way Mirror - 1/4" Cut to Size - (13" x 16")`, link: "" },
     {
-      text: "2 x ReliaBilt 1-in x 3-in x 6-ft Square Unfinished Pine Board",
+      text: "2 x ReliaBilt 1-in x 3-in x 6-ft Unfinished Pine Board",
       url: "https://www.lowes.com/pd/Common-1-in-x-3-in-x-6-ft-Actual-0-75-in-x-2-5-in-x-6-ft-Pine-Board/1000070127",
     },
     {
-      text: "15/32-in 2-ft 2-ft Pine Sanded Plywood",
+      text: "15/32-in x 2-ft x 2-ft Pine Sanded Plywood",
       url: "https://www.lowes.com/pd/15-32-in-Common-Pine-Sanded-Plywood-Application-as-2-x-2/3043814",
     },
     {

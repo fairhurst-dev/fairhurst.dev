@@ -21,7 +21,7 @@ function Hardware() {
         anything using wood before.
       </Typography>
       <Typography variant="body1" color="text.primary">
-        My criteria for successful mirror housing was:{" "}
+        My criteria for successful mirror housing were:{" "}
       </Typography>
       <List
         sx={{
@@ -40,7 +40,7 @@ function Hardware() {
         </ListItem>
         <ListItem>
           <ListItemText>
-            2.Conceal the wires without baking the RaspberryPi
+            2.Conceal the wires without baking the Raspberry Pi
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -294,12 +294,12 @@ function Hardware() {
         >
           silicone glue
         </Link>
-        . My glass measured 12 11/16 x 15 1/2 inches. For the shorter boards of
-        the frame, I subtracted 1/2 inch from each side, giving me 12 3/16 x 15
+        . My glass measured 15 9/16 x 12 11/16 inches. For the shorter boards of
+        the frame, I subtracted 1/2 inch from each side, giving me 15 x 12 3/16
         inches. Before you cut the longer pieces of wood, remember to add in the
         width of the wood (in my case 2.5 inches per side). The end grain of the
         shorter boards will butt against the longer boards’ edges at a 90-degree
-        angle. My final dimensions were 12 3/16 x 20 inches.
+        angle. My final dimensions were 20 x 12 3/16 inches.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -484,7 +484,7 @@ function Hardware() {
         the plywood width, measure from the outer faces of your top dummy box.
         To determine the length, measure from the outer top face of your dummy
         box to about 1/3rd of the length of the monitor. My back plate measured
-        14 3/16 x 7 9/16 inches.
+        7 9/16 x 14 3/16 inches.
       </Typography>
       <ImageModal
         margin="5px auto"
@@ -526,8 +526,8 @@ function Hardware() {
           href="https://thepihut.com/products/micro-hdmi-to-vga-adaptor"
         >
           microHDMI to VGA adapter
-        </Link>
-        to your RaspberryPi, then connect the adapter to a{" "}
+        </Link>{" "}
+        to your Raspberry Pi, then connect the adapter to a{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -543,7 +543,7 @@ function Hardware() {
         >
           power chord
         </Link>{" "}
-        and the RaspberryPi power to the{" "}
+        and the Raspberry Pi power to the{" "}
         <Link
           color="secondary.main"
           target="_blank"
@@ -562,7 +562,7 @@ function Hardware() {
         >
           cable ties
         </Link>{" "}
-        to separate the cords for the monitor power, RaspberryPi power, and VGA
+        to separate the cords for the monitor power, Raspberry Pi power, and VGA
         cables. I attached squares of{" "}
         <Link
           color="secondary.main"
@@ -621,16 +621,15 @@ function Hardware() {
         width="500px"
       />
       <Typography variant="body1" color="text.primary">
-        Hang, and plug the A/C splitter into the wall outlet. The RaspberryPi
-        should boot automatically, and pm2 should handling starting the
-        MagicMirror<sup>2</sup> platform on launch! To turn the mirror off, you
-        can{" "}
+        Hang, and plug the A/C splitter into the wall outlet. The Raspberry Pi
+        should boot automatically, and pm2 should start the MagicMirror
+        <sup>2</sup> platform on launch! To turn the mirror off, you can{" "}
         <Link
           color="secondary.main"
           target="_blank"
           href="https://www.howtogeek.com/768053/how-to-ssh-into-your-raspberry-pi/"
         >
-          SSH into your RaspberryPi
+          SSH into your Raspberry Pi
         </Link>{" "}
         and type:
         <Code text="sudo shutdown now" />
@@ -638,7 +637,7 @@ function Hardware() {
         <Link
           color="secondary.main"
           target="_blank"
-          href="https://www.youtube.com/watch?v=0sovQSeYcxs&t=143s&ab_channel=KskRoyal"
+          href="https://www.youtube.com/watch?v=0sovQSeYcxs"
         >
           iPhone shortcut to SSH into your mirror
         </Link>
