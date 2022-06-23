@@ -6,6 +6,7 @@ import SuppliesList from "../mirror/SuppliesList";
 import Hardware from "../mirror/Hardware";
 import Software from "../mirror/Software";
 import Intro from "../mirror/Intro";
+import { Helmet } from "react-helmet";
 
 function Mirror() {
   const dividerStyle = {
@@ -36,7 +37,63 @@ function Mirror() {
         "@media (max-width: 800px)": { px: 2 },
       }}
     >
-      {" "}
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta
+          property="og:image"
+          content="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+        />
+        <link
+          rel="icon"
+          href="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+          sizes="16x16"
+        />
+        <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="mask-icon"
+          href="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+          color="#5bbad5"
+        />
+        <meta
+          name="description"
+          content="Building A Magic Mirror by Caroline Fairhurst for fairhurst.dev"
+        />
+        {/*
+        <title>Building A Magic Mirror</title>
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Building A Magic Mirror" />
+        <meta property="og:description" content="Building A Magic Mirror" />
+        <meta
+          property="og:image"
+          content="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Building A Magic Mirror" />
+        <meta name="twitter:description" content="Building A Magic Mirror" />
+        <meta
+          name="twitter:image"
+          content="https://fairhurstdevassets.s3.amazonaws.com/mirror/magic_mirror_final_full.png"
+        />
+    */}
+      </Helmet>
       <Grid xs={12} display="flex" justifyContent="center" item container>
         <Typography
           sx={titleStyle}
