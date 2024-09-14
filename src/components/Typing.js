@@ -36,22 +36,17 @@ function Typing() {
 
       <Typography variant="h4">
         <Typed
+          startWhenVisible
           style={titleStyle}
           strings={["Caroline Fairhurst"]}
           typeSpeed={40}
         />
       </Typography>
-
       <Typography sx={subtitleStyle} variant="h5">
         <Typed
-          strings={[
-            "Full Stack Developer",
-            "UX Designer",
-            "Pedagogical Content Creator",
-          ]}
-          typeSpeed={40}
-          backSpeed={50}
-          loop
+          startWhenVisible
+          strings={["Software Developer"]}
+          typeSpeed={80}
         />
       </Typography>
     </Stack>

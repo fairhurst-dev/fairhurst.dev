@@ -17,10 +17,14 @@ function About() {
     fontStyle: "italic",
   };
   const avatarStyle = { width: 150, height: 150, m: "1em auto" };
-  const textTop =
-    "I am a Full-Stack developer from the Jersey Shore. My passion for computing started when my parents gifted me a Gateway 98 computer which I used to browse the Encarta encyclopedia, create greeting cards, and play pixelated games. I continued my passion for computing by studying Computer Science at Stockton University. During the pandemic, I built my own computer, powered by AMD Ryzen and a MSI GPU. ";
-  const textBottom =
-    "Currently, I am a Cloud-Native Associate Software Developer for Kaplan North America's Innovation Team. In my previous role as an Instructional Content Developer, I learned the power of pedagogical design: developing educational interactions that enrich the learning experience. In my role as a Software Developer, I employ serverless solutions, and ensure my code is accessible, responsive, and compatible with legacy browsers. I aim to maximize the usability of software, which in turn empowers users. In my free time I enjoy playing with my cat Saint, working out, and exploring New Jersey.";
+  const textTop = `I am currently a cloud native Software Developer with 3 years of experience engineering frontend and backend applications. I am well versed in Javascript, 
+  DynamoDB, AWS, and the Serverless Framework.
+  I collaborated with the VP of Technology of Kaplan North America's Innovation Team to migrate our monolithic repository into an event-driven microservice
+  platform on AWS. Additionally, I am spearheading the use of Artificial Intelligence on our team to automate repetitive business tasks and generate
+  new content to drive conversions. I truly enjoy requirements engineering and breaking down technical concepts to our non-technical stakeholders.`;
+
+  const textBottom = `My love of computing started when my parents gifted me a Gateway 98 computer. My passion led me to major in Computer Science
+  at Stockton University, where I graduated Summa Cum Laude. In my free time I enjoy playing with my cat Saint, working out, and exploring New Jersey.`;
 
   return (
     <Grid
