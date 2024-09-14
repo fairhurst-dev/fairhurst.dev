@@ -5,6 +5,12 @@ const cardStyle = { color: "secondary.main", fontSize: 200 };
 
 const cardData = [
   {
+    title: "Resume",
+    description: ["Click to download"],
+    icon: <SaveAlt sx={cardStyle} />,
+    link: "",
+  },
+  {
     title: "Magic Mirror",
     description: ["Read about my Magic Mirror build"],
     icon: (
@@ -23,12 +29,6 @@ const cardData = [
     description: ["Check out my repos"],
     icon: <GitHub sx={cardStyle} />,
     link: "https://github.com/fairhurst-dev/",
-  },
-  {
-    title: "Resume",
-    description: ["Click to download"],
-    icon: <SaveAlt sx={cardStyle} />,
-    link: "",
   },
 ];
 
