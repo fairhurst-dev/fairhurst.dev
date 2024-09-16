@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Avatar, Stack } from "@mui/material";
 import { Fade } from "@mui/material";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 
 function Typing() {
   const secondary = "rgb(232, 51, 244)";
@@ -35,7 +35,7 @@ function Typing() {
       </Fade>
 
       <Typography variant="h4">
-        <Typed
+        <ReactTyped
           startWhenVisible
           style={titleStyle}
           strings={["Caroline Fairhurst"]}
@@ -43,7 +43,7 @@ function Typing() {
         />
       </Typography>
       <Typography sx={subtitleStyle} variant="h5">
-        <Typed
+        <ReactTyped
           startWhenVisible
           strings={["Software Developer"]}
           typeSpeed={80}
