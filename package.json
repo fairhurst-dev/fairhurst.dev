@@ -9,7 +9,6 @@
     "@mui/icons-material": "^6.1.0",
     "@mui/material": "^6.1.0",
     "@mui/styles": "^6.1.0",
-    "@react-pdf-viewer/get-file": "^3.12.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -19,12 +18,13 @@
     "git-filter-repo": "^0.0.30",
     "history": "^5.1.0",
     "nth-check": "^2.1.1",
-    "pdfjs-dist": "^2.6.347",
+    "pdfjs-dist": "4.4.168",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-github-btn": "^1.4.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
+    "react-pdf": "^9.1.1",
     "react-router-dom": "^6.0.2",
     "react-typed": "^2.0.12",
     "shell-quote": "^1.7.3",
@@ -55,7 +55,6 @@
     ]
   },
   "devDependencies": {
-    "@react-pdf-viewer/core": "^2.10.1",
     "react-scripts": "^5.0.1"
   }
 }
