@@ -12,7 +12,7 @@ function PDFViewer(props) {
   const { DownloadButton } = getFilePluginInstance;
 
   return (
-    <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js">
+    <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js">
       <div
         style={{
           alignItems: "center",
