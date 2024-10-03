@@ -3,11 +3,11 @@
 ## 🛠 Local Development
 
 1. Clone this repo
-2. Create a `.env` with authorized AWS tokens
-3. `npm install`
-4. `npm start`
+3. `npm i`
+4. `npm run start`
 
 ## 🚀 Deploy
 
-1. `npm install -g serverless`
-2. `sls deploy`
+To deploy to [dev](dev.fairhurst.dev) ==> push to dev
+
+To deploy to [main](fairhurst.dev) ==> push to main

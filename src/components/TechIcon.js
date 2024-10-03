@@ -2,7 +2,7 @@ import React from "react";
 import { DiReact } from "react-icons/di";
 import {
   SiMaterialui,
-  SiServerless,
+  SiAwsamplify,
   SiGithub,
   SiAmazonaws,
 } from "react-icons/si";
@@ -23,9 +23,9 @@ function TechIcon(props) {
         return (
           <SiMaterialui size="64" color={props.active ? active : "white"} />
         );
-      case "serverless":
+      case "amplify":
         return (
-          <SiServerless size="64" color={props.active ? active : "white"} />
+          <SiAwsamplify size="64" color={props.active ? active : "white"} />
         );
       case "GitHub":
         return <SiGithub size="64" color={props.active ? active : "white"} />;
