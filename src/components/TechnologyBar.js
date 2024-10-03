@@ -12,7 +12,7 @@ function TechnologyBar() {
     {
       name: "Material UI",
     },
-    { name: "serverless" },
+    { name: "amplify" },
     { name: "GitHub" },
   ];
 
