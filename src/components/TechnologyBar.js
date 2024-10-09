@@ -8,11 +8,10 @@ function TechnologyBar() {
 
   const techData = [
     { name: "React" },
-    { name: "aws" },
     {
       name: "Material UI",
     },
-    { name: "amplify" },
+    { name: "AWS Amplify" },
     { name: "GitHub" },
   ];
 

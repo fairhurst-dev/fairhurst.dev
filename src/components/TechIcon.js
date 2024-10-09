@@ -1,11 +1,6 @@
 import React from "react";
 import { DiReact } from "react-icons/di";
-import {
-  SiMaterialui,
-  SiAwsamplify,
-  SiGithub,
-  SiAmazonaws,
-} from "react-icons/si";
+import { SiMaterialui, SiAwsamplify, SiGithub } from "react-icons/si";
 import { Box } from "@mui/system";
 
 function TechIcon(props) {
@@ -15,15 +10,11 @@ function TechIcon(props) {
     switch (props.name) {
       case "React":
         return <DiReact size="64" color={props.active ? active : "white"} />;
-      case "aws":
-        return (
-          <SiAmazonaws size="64" color={props.active ? active : "white"} />
-        );
       case "Material UI":
         return (
           <SiMaterialui size="64" color={props.active ? active : "white"} />
         );
-      case "amplify":
+      case "AWS Amplify":
         return (
           <SiAwsamplify size="64" color={props.active ? active : "white"} />
         );
