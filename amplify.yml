@@ -1,4 +1,9 @@
 version: 1
+env:
+  variables:
+    REACT_APP_EMAIL_SERVICE_ID: process.env.EMAIL_SERVICE_ID
+    REACT_APP_EMAIL_TEMPLATE_ID: process.env.EMAIL_TEMPLATE_ID
+    REACT_APP_EMAIL_PUBLIC_KEY: process.env.EMAIL_PUBLIC_KEY
 frontend:
   phases:
     preBuild:
@@ -10,7 +15,7 @@ frontend:
   artifacts:
     baseDirectory: build
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - .npm/**/*
