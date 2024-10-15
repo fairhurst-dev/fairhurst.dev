@@ -1,12 +1,14 @@
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const send = (data, setMessage, setSubmitting) => {
-  const serviceID = "service_r44ncyh";
-  const templateID = "fairhurstdev_contact";
-  const userID = "user_cRgIAqBiRIW8jKc2eKH8d";
+  const serviceID = process.env.REACT_APP_EMAIL_SERVICE_ID;
+  const templateID = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+  const publicKey = process.env.REACT_APP_EMAIL_PUBLIC_KEY;
 
   emailjs
-    .send(serviceID, templateID, data, userID)
+    .send(serviceID, templateID, data, {
+      publicKey: publicKey,
+    })
     .then(
       (response) => {
         setMessage({
